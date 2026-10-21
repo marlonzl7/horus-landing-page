@@ -53,8 +53,6 @@ Alternativas de CTA consideradas: botão de download falso, formulário de cadas
 - **Identidade visual:** reaproveitada do próprio app: azul-marinho `#010440` / `#0B1130` como cor primária, fundo claro `#F0F1F2` e verde `#059669` (a cor do pin "você" no mapa) como acento dos CTAs. Na landing, tenho liberdade para ajustar tons e tipografia.
 - **Conteúdo das seções:** vem da documentação do projeto (problema, personas, requisitos como atualização a cada 30s, localização em segundo plano, consentimento e LGPD).
 
-*(Complementar aqui com sites e páginas que eu realmente consultar durante o desenvolvimento.)*
-
 ### Ferramentas utilizadas
 
 - React com Vite
@@ -76,18 +74,6 @@ Alternativas de CTA consideradas: botão de download falso, formulário de cadas
 - Planejamento da atividade: leitura do enunciado, checklist de requisitos e riscos (prazo, regra do produto fictício, README).
 - Proposta de arquitetura FSD, estrutura de pastas e divisão da página em seções.
 - Plano de desenvolvimento em partes com estimativa de tempo.
-
-**Decisões minhas, não da IA:** usar o Horus como produto, trabalhar individualmente, aprovar FSD, manter a identidade de cores do app e dar o nome `horus-landing-page` ao repositório.
-
-*(Manter esta seção atualizada ao fim de cada parte, registrando: o que a IA sugeriu e eu mantive, o que alterei, o que descartei e onde o resultado não foi satisfatório.)*
-
-### Evolução da solução
-
-*(A preencher durante o desenvolvimento. Pontos para registrar: mudanças de cor e tipografia, reorganização de seções, mudanças no CTA, sugestões da IA que não segui.)*
-
-### Resultado final
-
-*(A preencher ao final: avaliação do resultado e o que eu faria diferente com mais tempo, por exemplo animações, depoimentos mais elaborados, versão em inglês, integração real da lista de espera.)*
 
 ## Arquitetura (FSD)
 
