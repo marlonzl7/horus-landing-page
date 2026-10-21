@@ -1,0 +1,32 @@
+export const PLANS = [
+  {
+    id: 'free',
+    name: 'Free',
+    price: 'R$ 0',
+    period: 'para sempre',
+    description: 'Para experimentar com a família.',
+    features: ['Até 4 membros', 'Atualização a cada 5 minutos', 'Sem histórico de localização'],
+    cta: 'Começar grátis',
+  },
+  {
+    id: 'familia',
+    name: 'Família',
+    price: 'R$ 24,90',
+    period: '/mês por família',
+    description: 'Tempo real para todo mundo.',
+    features: ['Membros ilimitados', 'Atualização a cada 30 segundos', 'Histórico de 30 dias', 'Um valor só, não por pessoa'],
+    cta: 'Entrar na lista',
+  },
+  {
+    id: 'fundador',
+    name: 'Fundador',
+    price: 'R$ 9,90',
+    originalPrice: 'R$ 24,90',
+    period: '/mês, para sempre',
+    description: 'Para quem entra antes do lançamento.',
+    features: ['Tudo do plano Família', 'Preço travado para sempre', 'Acesso antecipado ao app'],
+    cta: 'Quero ser fundador',
+    highlight: true,
+    badge: 'Mais vantajoso',
+  },
+]
