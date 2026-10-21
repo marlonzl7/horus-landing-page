@@ -1,6 +1,8 @@
 import { useState } from 'react'
 import { Header } from '@/widgets/header'
 import { Hero } from '@/widgets/hero'
+import { Benefits } from '@/widgets/benefits'
+import { HowItWorks } from '@/widgets/how-it-works'
 import { Modal } from '@/shared/ui'
 
 export function LandingPage() {
@@ -12,6 +14,8 @@ export function LandingPage() {
       <Header onJoinWaitlist={openWaitlist} />
       <main>
         <Hero onJoinWaitlist={openWaitlist} />
+        <Benefits />
+        <HowItWorks onJoinWaitlist={openWaitlist} />
       </main>
 
       {/* Conteúdo temporário: o formulário real entra na Parte 5 (feature waitlist-form) */}
