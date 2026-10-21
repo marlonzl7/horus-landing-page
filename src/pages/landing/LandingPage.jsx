@@ -5,7 +5,10 @@ import { Benefits } from '@/widgets/benefits'
 import { HowItWorks } from '@/widgets/how-it-works'
 import { Testimonials } from '@/widgets/testimonials'
 import { Pricing } from '@/widgets/pricing'
-import { Modal } from '@/shared/ui'
+import { Faq } from '@/widgets/faq'
+import { FinalCta } from '@/widgets/final-cta'
+import { Footer } from '@/widgets/footer'
+import { WaitlistModal } from '@/features/waitlist-form'
 
 export function LandingPage() {
   const [isWaitlistOpen, setWaitlistOpen] = useState(false)
@@ -26,12 +29,12 @@ export function LandingPage() {
         <HowItWorks onJoinWaitlist={openWaitlist} />
         <Testimonials />
         <Pricing onSelectPlan={openWaitlist} />
+        <Faq />
+        <FinalCta onJoinWaitlist={openWaitlist} />
       </main>
+      <Footer />
 
-      {/* Conteúdo temporário: o formulário real entra na Parte 5 (feature waitlist-form) */}
-      <Modal isOpen={isWaitlistOpen} onClose={() => setWaitlistOpen(false)} title="Lista de espera">
-        <p>Plano escolhido: {selectedPlan ?? 'nenhum'}. O formulário será adicionado na Parte 5.</p>
-      </Modal>
+      <WaitlistModal isOpen={isWaitlistOpen} onClose={() => setWaitlistOpen(false)} planId={selectedPlan} />
     </>
   )
 }

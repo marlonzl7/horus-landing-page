@@ -1,0 +1,25 @@
+.list { display: grid; gap: var(--space-3); max-width: 760px; margin: 0 auto; }
+.item { border: 1px solid var(--color-border); border-radius: var(--radius-md); background: var(--color-white); }
+.heading { margin: 0; }
+.trigger {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-4);
+  width: 100%;
+  padding: var(--space-4) var(--space-6);
+  border: none;
+  background: transparent;
+  color: var(--color-primary);
+  font-size: 1rem;
+  font-weight: 700;
+  text-align: left;
+  cursor: pointer;
+}
+.icon { flex-shrink: 0; font-size: 1.5rem; line-height: 1; color: var(--color-accent); transition: transform 0.25s; }
+.open .icon { transform: rotate(45deg); }
+
+.panel { display: grid; grid-template-rows: 0fr; transition: grid-template-rows 0.25s ease; }
+.open .panel { grid-template-rows: 1fr; }
+.answer { min-height: 0; overflow: hidden; padding: 0 var(--space-6); color: var(--color-text-muted); font-size: 0.95rem; }
+.open .answer { padding-bottom: var(--space-4); }
