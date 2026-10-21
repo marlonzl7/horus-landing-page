@@ -10,8 +10,8 @@
   --color-text: #1b1f3b;
   --color-text-muted: #5b6075;
   --color-text-on-dark: #b8bfdb;
-  --color-accent: #059669;
-  --color-accent-hover: #047857;
+  --color-accent: #047857;
+  --color-accent-hover: #065f46;
   --color-accent-soft: #d1fae5;
   --color-danger: #dc2626;
 
@@ -78,5 +78,5 @@ button, input {
 
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
-  * { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+  * { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; }
 }

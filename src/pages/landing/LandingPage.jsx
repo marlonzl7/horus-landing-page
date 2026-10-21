@@ -23,7 +23,7 @@ export function LandingPage() {
   return (
     <>
       <Header onJoinWaitlist={openWaitlist} />
-      <main>
+      <main id="conteudo">
         <Hero onJoinWaitlist={openWaitlist} />
         <Benefits />
         <HowItWorks onJoinWaitlist={openWaitlist} />
