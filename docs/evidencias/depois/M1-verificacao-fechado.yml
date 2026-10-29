@@ -1,0 +1,30 @@
+- generic [ref=f131e2]:
+  - generic [ref=f131e3]:
+    - generic [ref=f131e4]: Dúvidas
+    - heading "Perguntas frequentes" [level=2] [ref=f131e5]
+    - paragraph [ref=f131e6]: Ironicamente, aqui você pode perguntar à vontade.
+  - generic [ref=f131e7]:
+    - heading [level=3] [ref=f131e9]:
+      - button "O app gasta muita bateria?" [active] [ref=f131e10] [cursor=pointer]:
+        - text: O app gasta muita bateria?
+        - generic [aria-hidden] [ref=f131e11]: +
+    - heading [level=3] [ref=f131e13]:
+      - button "Quem consegue ver a minha localização?" [ref=f131e14] [cursor=pointer]:
+        - text: Quem consegue ver a minha localização?
+        - generic [aria-hidden] [ref=f131e15]: +
+    - heading [level=3] [ref=f131e17]:
+      - button "Funciona em iPhone e Android?" [ref=f131e18] [cursor=pointer]:
+        - text: Funciona em iPhone e Android?
+        - generic [aria-hidden] [ref=f131e19]: +
+    - heading [level=3] [ref=f131e21]:
+      - button "Como convido alguém da família?" [ref=f131e22] [cursor=pointer]:
+        - text: Como convido alguém da família?
+        - generic [aria-hidden] [ref=f131e23]: +
+    - heading [level=3] [ref=f131e25]:
+      - button "Posso sair da família ou apagar minha conta?" [ref=f131e26] [cursor=pointer]:
+        - text: Posso sair da família ou apagar minha conta?
+        - generic [aria-hidden] [ref=f131e27]: +
+    - heading [level=3] [ref=f131e29]:
+      - button "Quando o app será lançado?" [ref=f131e30] [cursor=pointer]:
+        - text: Quando o app será lançado?
+        - generic [aria-hidden] [ref=f131e31]: +

@@ -54,13 +54,13 @@ Nos snapshots fechados, a árvore contém apenas o subtítulo da seção e os 6 
 - `M1-verificacao-fechado.yml` — árvore com o FAQ todo fechado (0 regiões, 0 respostas)
 - `M1-verificacao-aberto.yml` — árvore com uma resposta aberta por clique
 - `M1-verificacao-teclado.yml` — árvore com uma resposta aberta por teclado
-- `M1-verificacao-faq-fechado.png` — FAQ fechado no desktop
+- `M1-faq-fechado.png` — FAQ fechado no desktop
 - `M1-verificacao-faq-aberto.png` — FAQ aberto no desktop
-- `M1-verificacao-F1.png` — regressão do clique (uma aberta)
-- `M1-verificacao-F2-foco.png` — foco de teclado na pergunta
-- `M1-verificacao-F2.png` — segunda pergunta aberta por teclado
+- `F1-faq.png` — regressão do clique (uma aberta)
+- `F2-faq-foco-teclado.png` — foco de teclado na pergunta
+- `M1-verificacao-teclado.png` — segunda pergunta aberta por teclado
 - `M1-verificacao-teclado.png` — mesma situação, captura da árvore
-- `M1-verificacao-360.png` — FAQ em 360 px
+- `M1-faq-360.png` — FAQ em 360 px
 - `M1-verificacao.json` — resultados estruturados
 - `M1-verificacao.md` — este relatório
 
