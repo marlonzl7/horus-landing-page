@@ -1,0 +1,84 @@
+{
+  "problema": "B1 - header quebra entre 769 e 798 px",
+  "data": "2026-10-28",
+  "url": "http://localhost:5173/",
+  "arquivo_alterado": "src/widgets/header/Header.module.css",
+  "correcao": "Media query de 769 a 820 px reduz o gap de .inner (24 -> 16 px) e de .nav (32 -> 16 px), mantendo logo, navegacao e CTA em uma unica linha.",
+  "antes": {
+    "320": { "clientWidth": 305, "headerHeight": 61, "logoLines": 1, "nav": "oculto", "cta": "oculto no header; menu mobile", "hScroll": false },
+    "360": { "clientWidth": 345, "headerHeight": 61, "logoLines": 1, "nav": "oculto", "cta": "oculto no header; menu mobile", "hScroll": false },
+    "768": { "clientWidth": 753, "headerHeight": 61, "logoLines": 1, "nav": "oculto", "cta": "oculto no header; menu mobile", "hScroll": false },
+    "769": { "clientWidth": 754, "headerHeight": 98, "logoLines": 2, "navComoFuncionaLines": 2, "ctaLines": 2, "hScroll": false },
+    "780": { "clientWidth": 765, "headerHeight": 98, "logoLines": 2, "navComoFuncionaLines": 2, "ctaLines": 2, "hScroll": false },
+    "798": { "clientWidth": 783, "headerHeight": 98, "logoLines": 2, "navComoFuncionaLines": 2, "ctaLines": 2, "hScroll": false },
+    "799": { "clientWidth": 784, "headerHeight": 74, "logoLines": 1, "nav": "1 linha por link", "ctaLines": 1, "hScroll": false, "folga": "1 px (limite)" },
+    "1280": { "clientWidth": 1265, "headerHeight": 74, "logoLines": 1, "nav": "1 linha por link", "ctaLines": 1, "hScroll": false, "folga": "337 px" }
+  },
+  "depois": [
+    { "width": 320, "clientWidth": 305, "headerHeight": 61, "headerEsperado": 61, "logoLines": 1, "nav": "oculto", "navGap": null, "ctaLinhas": null, "burger": "visivel", "hScroll": false, "conteudoDentroDaTela": true, "resultado": "OK" },
+    { "width": 360, "clientWidth": 345, "headerHeight": 61, "headerEsperado": 61, "logoLines": 1, "nav": "oculto", "navGap": null, "ctaLinhas": null, "burger": "visivel", "hScroll": false, "conteudoDentroDaTela": true, "resultado": "OK" },
+    { "width": 768, "clientWidth": 753, "headerHeight": 61, "headerEsperado": 61, "logoLines": 1, "nav": "oculto", "navGap": null, "ctaLinhas": null, "burger": "visivel", "hScroll": false, "conteudoDentroDaTela": true, "resultado": "OK" },
+    { "width": 769, "clientWidth": 754, "headerHeight": 74, "headerEsperado": 74, "logoLines": 1, "nav": "4 links, 1 linha cada", "navGap": "16px", "ctaLinhas": 1, "burger": "oculto", "hScroll": false, "conteudoDentroDaTela": true, "resultado": "OK" },
+    { "width": 780, "clientWidth": 765, "headerHeight": 74, "headerEsperado": 74, "logoLines": 1, "nav": "4 links, 1 linha cada", "navGap": "16px", "ctaLinhas": 1, "burger": "oculto", "hScroll": false, "conteudoDentroDaTela": true, "resultado": "OK" },
+    { "width": 798, "clientWidth": 783, "headerHeight": 74, "headerEsperado": 74, "logoLines": 1, "nav": "4 links, 1 linha cada", "navGap": "16px", "ctaLinhas": 1, "burger": "oculto", "hScroll": false, "conteudoDentroDaTela": true, "resultado": "OK" },
+    { "width": 799, "clientWidth": 784, "headerHeight": 74, "headerEsperado": 74, "logoLines": 1, "nav": "4 links, 1 linha cada", "navGap": "16px", "ctaLinhas": 1, "burger": "oculto", "hScroll": false, "conteudoDentroDaTela": true, "resultado": "OK" },
+    { "width": 1280, "clientWidth": 1265, "headerHeight": 74, "headerEsperado": 74, "logoLines": 1, "nav": "4 links, 1 linha cada", "navGap": "32px", "ctaLinhas": 1, "burger": "oculto", "hScroll": false, "conteudoDentroDaTela": true, "resultado": "OK" },
+    { "width": 820, "clientWidth": 805, "headerHeight": 74, "headerEsperado": 74, "logoLines": 1, "nav": "4 links, 1 linha cada", "navGap": "16px", "ctaLinhas": 1, "burger": "oculto", "hScroll": false, "conteudoDentroDaTela": true, "resultado": "OK (fronteira)" },
+    { "width": 821, "clientWidth": 806, "headerHeight": 74, "headerEsperado": 74, "logoLines": 1, "nav": "4 links, 1 linha cada", "navGap": "32px", "ctaLinhas": 1, "burger": "oculto", "hScroll": false, "conteudoDentroDaTela": true, "resultado": "OK (fronteira)" }
+  ],
+  "funcionalidade": {
+    "320": {
+      "menu": { "abriu": true, "ariaExpanded": "true", "links": 4, "visivel": true },
+      "cta": { "abriuModal": true, "fechouComEsc": true, "hScroll": false }
+    },
+    "360": {
+      "menu": { "abriu": true, "ariaExpanded": "true", "links": 4, "visivel": true },
+      "menuLink": { "href": "#beneficios", "fechouMenu": true, "ariaExpandedDepois": "false", "scrollY": 1295, "hScroll": false },
+      "cta": { "abriuModal": true, "fechouMenu": true, "fechouComEsc": true, "hScroll": false }
+    },
+    "768": {
+      "menu": { "abriu": true, "fechou": true, "ariaExpandedDepois": "false", "hScroll": false },
+      "cta": { "abriuModal": true, "fechouMenu": true, "fechouComEsc": true, "hScroll": false }
+    },
+    "769": {
+      "navLink": { "href": "#faq", "alvoExiste": true, "scrollY": 6403, "headerHeightDepois": 74, "hScroll": false },
+      "cta": { "abriuModal": true, "headerHeight": 74, "hScroll": false, "fechouComEsc": true }
+    },
+    "780": {
+      "navLink": { "href": "#faq", "alvoExiste": true, "scrollY": 6363, "headerHeightDepois": 74, "hScroll": false },
+      "cta": { "abriuModal": true, "headerHeight": 74, "hScroll": false, "fechouComEsc": true }
+    },
+    "798": {
+      "navLink": { "href": "#faq", "alvoExiste": true, "scrollY": 6354, "headerHeightDepois": 74, "hScroll": false },
+      "cta": { "abriuModal": true, "headerHeight": 74, "hScroll": false, "fechouComEsc": true }
+    },
+    "799": {
+      "navLink": { "href": "#faq", "alvoExiste": true, "scrollY": 6358, "headerHeightDepois": 74, "hScroll": false },
+      "cta": { "abriuModal": true, "headerHeight": 74, "hScroll": false, "fechouComEsc": true }
+    },
+    "1280": {
+      "navLink": { "href": "#faq", "alvoExiste": true, "scrollY": 4419, "headerHeightDepois": 74, "hScroll": false },
+      "cta": { "abriuModal": true, "headerHeight": 74, "hScroll": false, "fechouComEsc": true }
+    }
+  },
+  "console": {
+    "erros": 0,
+    "avisos": 0,
+    "pageErrors": 0,
+    "infosReactDevTools": 16,
+    "observacao": "Mensagens info do React DevTools nao sao erros."
+  },
+  "rede": {
+    "falhas": 0,
+    "respostas4xx5xx": 0
+  },
+  "build": {
+    "ok": true,
+    "modulos": 90,
+    "tempo": "1.17 s",
+    "css": "19.40 kB",
+    "js": "167.25 kB"
+  },
+  "antes_preservado": true,
+  "conclusao": "B1 corrigido. As 8 larguras solicitadas (320, 360, 768, 769, 780, 798, 799 e 1280 px) e as fronteiras 820/821 px mantem o header em uma linha, sem rolagem horizontal, com menu e CTA funcionando."
+}
