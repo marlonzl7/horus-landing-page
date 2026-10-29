@@ -1,0 +1,143 @@
+{
+  "metodo": "Chrome DevTools Protocol Accessibility.getFullAXTree via Playwright MCP (Chromium)",
+  "observacao": "Somente nos com ignored=false. Esta e a arvore usada pelas tecnologias assistivas no Chromium; e a fonte usada para validar o B2. O browser_snapshot do MCP usa ariaSnapshot baseado no DOM e inclui nos inertes, por isso nao foi usado como prova de ausencia do fundo.",
+  "desktop": {
+    "fechado": {
+      "landmarks": { "banner": 1, "main": 1, "contentinfo": 1 },
+      "dialog": 0,
+      "nodes": [
+        { "role": "banner", "name": "", "ignored": false },
+        { "role": "main", "name": "", "ignored": false },
+        { "role": "contentinfo", "name": "", "ignored": false },
+        { "role": "navigation", "name": "Seções da página", "ignored": false },
+        { "role": "button", "name": "Entrar na lista", "ignored": false },
+        { "role": "navigation", "name": "Links do rodapé", "ignored": false },
+        { "role": "heading", "name": "Chega de perguntar “chegou?”", "ignored": false },
+        { "role": "button", "name": "Entrar na lista de espera", "ignored": false },
+        { "role": "button", "name": "Quero ser avisado no lançamento", "ignored": false },
+        { "role": "heading", "name": "O app gasta muita bateria?", "ignored": false },
+        { "role": "heading", "name": "Quem consegue ver a minha localização?", "ignored": false },
+        { "role": "heading", "name": "Funciona em iPhone e Android?", "ignored": false },
+        { "role": "heading", "name": "Como convido alguém da família?", "ignored": false },
+        { "role": "heading", "name": "Posso sair da família ou apagar minha conta?", "ignored": false },
+        { "role": "heading", "name": "Quando o app será lançado?", "ignored": false },
+        { "role": "heading", "name": "Sua família merece parar de perguntar", "ignored": false },
+        { "role": "button", "name": "Entrar na lista de espera", "ignored": false },
+        { "role": "heading", "name": "Tudo o que você precisa para parar de perguntar", "ignored": false },
+        { "role": "heading", "name": "Três passos e a família está no mapa", "ignored": false },
+        { "role": "heading", "name": "Famílias que pararam de perguntar", "ignored": false },
+        { "role": "heading", "name": "Um valor para a família inteira", "ignored": false },
+        { "role": "heading", "name": "Free", "ignored": false },
+        { "role": "button", "name": "Começar grátis", "ignored": false },
+        { "role": "heading", "name": "Família", "ignored": false },
+        { "role": "button", "name": "Entrar na lista", "ignored": false },
+        { "role": "heading", "name": "Fundador", "ignored": false },
+        { "role": "button", "name": "Quero ser fundador", "ignored": false },
+        { "role": "heading", "name": "Perguntas frequentes", "ignored": false },
+        { "role": "button", "name": "O app gasta muita bateria?", "ignored": false },
+        { "role": "button", "name": "Quem consegue ver a minha localização?", "ignored": false },
+        { "role": "button", "name": "Funciona em iPhone e Android?", "ignored": false },
+        { "role": "button", "name": "Como convido alguém da família?", "ignored": false },
+        { "role": "button", "name": "Posso sair da família ou apagar minha conta?", "ignored": false },
+        { "role": "button", "name": "Quando o app será lançado?", "ignored": false },
+        { "role": "heading", "name": "Tempo real de verdade", "ignored": false },
+        { "role": "heading", "name": "Funciona em segundo plano", "ignored": false },
+        { "role": "heading", "name": "Privacidade e LGPD", "ignored": false },
+        { "role": "heading", "name": "Um plano para a família toda", "ignored": false },
+        { "role": "heading", "name": "Convite em um toque", "ignored": false },
+        { "role": "heading", "name": "Feito para o Brasil", "ignored": false },
+        { "role": "heading", "name": "Crie sua família", "ignored": false },
+        { "role": "heading", "name": "Convide por e-mail", "ignored": false },
+        { "role": "heading", "name": "Abra o mapa", "ignored": false }
+      ]
+    },
+    "aberto": {
+      "landmarks": { "banner": 0, "main": 0, "contentinfo": 0 },
+      "dialog": 1,
+      "nodes": [
+        { "role": "dialog", "name": "Lista de espera", "ignored": false },
+        { "role": "button", "name": "Fechar", "ignored": false },
+        { "role": "heading", "name": "Lista de espera", "ignored": false },
+        { "role": "textbox", "name": "Nome", "ignored": false },
+        { "role": "textbox", "name": "E-mail", "ignored": false },
+        { "role": "button", "name": "Entrar na lista de espera", "ignored": false }
+      ]
+    },
+    "aposFechar": {
+      "landmarks": { "banner": 1, "main": 1, "contentinfo": 1 },
+      "dialog": 0,
+      "nodes": "mesma arvore de fundo do estado fechado; confirmada apos Escape"
+    },
+    "estadoSucesso": {
+      "landmarks": { "banner": 0, "main": 0, "contentinfo": 0 },
+      "dialog": 1,
+      "nodes": [
+        { "role": "dialog", "name": "Lista de espera", "ignored": false },
+        { "role": "button", "name": "Fechar", "ignored": false },
+        { "role": "heading", "name": "Lista de espera", "ignored": false },
+        { "role": "button", "name": "Fechar", "ignored": false }
+      ]
+    }
+  },
+  "mobile360": {
+    "aberto": {
+      "landmarks": { "banner": 0, "main": 0, "contentinfo": 0 },
+      "dialog": 1,
+      "nodes": [
+        { "role": "dialog", "name": "Lista de espera", "ignored": false },
+        { "role": "button", "name": "Fechar", "ignored": false },
+        { "role": "heading", "name": "Lista de espera", "ignored": false },
+        { "role": "textbox", "name": "Nome", "ignored": false },
+        { "role": "textbox", "name": "E-mail", "ignored": false },
+        { "role": "button", "name": "Entrar na lista de espera", "ignored": false }
+      ]
+    },
+    "fechado": {
+      "landmarks": { "banner": 1, "main": 1, "contentinfo": 1 },
+      "dialog": 0,
+      "nodes": [
+        { "role": "banner", "name": "", "ignored": false },
+        { "role": "main", "name": "", "ignored": false },
+        { "role": "contentinfo", "name": "", "ignored": false },
+        { "role": "button", "name": "Abrir menu", "ignored": false },
+        { "role": "heading", "name": "Chega de perguntar “chegou?”", "ignored": false },
+        { "role": "button", "name": "Entrar na lista de espera", "ignored": false },
+        { "role": "button", "name": "Quero ser avisado no lançamento", "ignored": false },
+        { "role": "heading", "name": "O app gasta muita bateria?", "ignored": false },
+        { "role": "heading", "name": "Quem consegue ver a minha localização?", "ignored": false },
+        { "role": "heading", "name": "Funciona em iPhone e Android?", "ignored": false },
+        { "role": "heading", "name": "Como convido alguém da família?", "ignored": false },
+        { "role": "heading", "name": "Posso sair da família ou apagar minha conta?", "ignored": false },
+        { "role": "heading", "name": "Quando o app será lançado?", "ignored": false },
+        { "role": "heading", "name": "Sua família merece parar de perguntar", "ignored": false },
+        { "role": "button", "name": "Entrar na lista de espera", "ignored": false },
+        { "role": "heading", "name": "Tudo o que você precisa para parar de perguntar", "ignored": false },
+        { "role": "heading", "name": "Três passos e a família está no mapa", "ignored": false },
+        { "role": "heading", "name": "Famílias que pararam de perguntar", "ignored": false },
+        { "role": "heading", "name": "Um valor para a família inteira", "ignored": false },
+        { "role": "heading", "name": "Free", "ignored": false },
+        { "role": "button", "name": "Começar grátis", "ignored": false },
+        { "role": "heading", "name": "Família", "ignored": false },
+        { "role": "button", "name": "Entrar na lista", "ignored": false },
+        { "role": "heading", "name": "Fundador", "ignored": false },
+        { "role": "button", "name": "Quero ser fundador", "ignored": false },
+        { "role": "heading", "name": "Perguntas frequentes", "ignored": false },
+        { "role": "button", "name": "O app gasta muita bateria?", "ignored": false },
+        { "role": "button", "name": "Quem consegue ver a minha localização?", "ignored": false },
+        { "role": "button", "name": "Funciona em iPhone e Android?", "ignored": false },
+        { "role": "button", "name": "Como convido alguém da família?", "ignored": false },
+        { "role": "button", "name": "Posso sair da família ou apagar minha conta?", "ignored": false },
+        { "role": "button", "name": "Quando o app será lançado?", "ignored": false },
+        { "role": "heading", "name": "Tempo real de verdade", "ignored": false },
+        { "role": "heading", "name": "Funciona em segundo plano", "ignored": false },
+        { "role": "heading", "name": "Privacidade e LGPD", "ignored": false },
+        { "role": "heading", "name": "Um plano para a família toda", "ignored": false },
+        { "role": "heading", "name": "Convite em um toque", "ignored": false },
+        { "role": "heading", "name": "Feito para o Brasil", "ignored": false },
+        { "role": "heading", "name": "Crie sua família", "ignored": false },
+        { "role": "heading", "name": "Convide por e-mail", "ignored": false },
+        { "role": "heading", "name": "Abra o mapa", "ignored": false }
+      ]
+    }
+  }
+}

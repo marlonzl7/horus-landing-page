@@ -1,0 +1,70 @@
+{
+  "data": "2026-10-29",
+  "viewport": "360x800",
+  "hasTouch": true,
+  "isMobile": true,
+  "menuOpen": {
+    "dialogCount": 0,
+    "active": {
+      "tag": "BUTTON",
+      "ariaLabel": "Fechar menu",
+      "ariaExpanded": "true",
+      "insideDialog": false,
+      "path": "div#root > header > div > button"
+    },
+    "inert": { "header": false, "main": false, "footer": false },
+    "bodyOverflow": "",
+    "horizontalScroll": false,
+    "menu": { "exists": true, "burgerExpanded": "true" }
+  },
+  "opened": {
+    "dialogCount": 1,
+    "active": {
+      "tag": "DIV",
+      "insideDialog": true,
+      "path": "div#root > div > div"
+    },
+    "inert": { "header": true, "main": true, "footer": true },
+    "bodyOverflow": "hidden",
+    "horizontalScroll": false,
+    "menu": { "exists": false, "burgerExpanded": "false" }
+  },
+  "afterTouchOverlay": {
+    "dialogCount": 0,
+    "active": {
+      "tag": "BUTTON",
+      "ariaLabel": "Abrir menu",
+      "ariaExpanded": "false",
+      "insideDialog": false,
+      "path": "div#root > header > div > button"
+    },
+    "inert": { "header": false, "main": false, "footer": false },
+    "bodyOverflow": "",
+    "horizontalScroll": false,
+    "menu": { "exists": false, "burgerExpanded": "false" }
+  },
+  "focusAfterTouchOverlay": {
+    "activeIsBurger": true,
+    "activeTag": "BUTTON",
+    "activeLabel": "Abrir menu",
+    "burgerExpanded": "false",
+    "menuExists": false
+  },
+  "console": {
+    "total": 3,
+    "errors": 0,
+    "warnings": 0,
+    "info": 1,
+    "pageErrors": 0
+  },
+  "network": {
+    "responses": 73,
+    "failedRequests": 0,
+    "badResponses": 0,
+    "nonStatic": 27
+  },
+  "artefatos": [
+    "docs/evidencias/depois/B2-foco-mobile-toque-aberto.png",
+    "docs/evidencias/depois/B2-foco-mobile-toque-apos-overlay.png"
+  ]
+}

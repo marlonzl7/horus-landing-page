@@ -1,0 +1,243 @@
+- generic [ref=f192e2]:
+  - banner [ref=f192e3]:
+    - link "Pular para o conteúdo" [ref=f192e4] [cursor=pointer]:
+      - /url: "#conteudo"
+    - generic [ref=f192e5]:
+      - link "Horus Guardian, início" [ref=f192e6] [cursor=pointer]:
+        - /url: "#topo"
+        - generic [ref=f192e7]: Horus Guardian
+      - navigation "Seções da página" [ref=f192e307]:
+        - link "Benefícios" [ref=f192e308] [cursor=pointer]:
+          - /url: "#beneficios"
+        - link "Como funciona" [ref=f192e309] [cursor=pointer]:
+          - /url: "#como-funciona"
+        - link "Preços" [ref=f192e310] [cursor=pointer]:
+          - /url: "#precos"
+        - link "FAQ" [ref=f192e311] [cursor=pointer]:
+          - /url: "#faq"
+      - button "Entrar na lista" [ref=f192e312] [cursor=pointer]
+  - main [ref=f192e16]:
+    - generic [ref=f192e18]:
+      - generic [ref=f192e19]:
+        - generic [ref=f192e20]: Localização familiar em tempo real
+        - heading "Chega de perguntar “chegou?”" [level=1] [ref=f192e21]
+        - paragraph [ref=f192e22]: O Horus Guardian mostra onde cada pessoa da família está, sem ligação e sem mensagem. Você abre o mapa e já sabe.
+        - generic [ref=f192e23]:
+          - button "Entrar na lista de espera" [active] [ref=f192e24] [cursor=pointer]
+          - link "Ver como funciona" [ref=f192e25] [cursor=pointer]:
+            - /url: "#como-funciona"
+        - list [ref=f192e26]:
+          - listitem [ref=f192e27]: ✓ Atualização a cada 30 segundos
+          - listitem [ref=f192e28]: ✓ Funciona com o app fechado
+          - listitem [ref=f192e29]: ✓ Privacidade e LGPD
+      - generic [ref=f192e30]:
+        - img "Tela do app Horus Guardian mostrando três familiares no mapa" [ref=f192e31]:
+          - img [aria-hidden] [ref=f192e33]:
+            - generic [ref=f192e42]: A
+            - generic [ref=f192e46]: P
+            - generic [ref=f192e50]: M
+          - generic [ref=f192e54]: Conectado
+        - generic [ref=f192e56]:
+          - strong [ref=f192e57]: Ana chegou na faculdade
+          - generic [ref=f192e58]: Atualizado agora
+        - generic [ref=f192e59]:
+          - strong [ref=f192e60]: Pai saiu do trabalho
+          - generic [ref=f192e61]: Atualizado há 1 min
+    - generic [ref=f192e63]:
+      - generic [ref=f192e64]:
+        - generic [ref=f192e65]: Benefícios
+        - heading "Tudo o que você precisa para parar de perguntar" [level=2] [ref=f192e66]
+        - paragraph [ref=f192e67]: Simples para quem consulta, invisível para quem é consultado.
+      - list [ref=f192e68]:
+        - listitem [ref=f192e69]:
+          - heading "Tempo real de verdade" [level=3] [ref=f192e74]
+          - paragraph [ref=f192e75]: A localização é atualizada a cada 30 segundos. Menos de um minuto de atraso em condições normais de rede.
+        - listitem [ref=f192e76]:
+          - heading "Funciona em segundo plano" [level=3] [ref=f192e80]
+          - paragraph [ref=f192e81]: Ninguém precisa abrir o app. Ele compartilha a posição sozinho, e quem consulta vê tudo no mapa.
+        - listitem [ref=f192e82]:
+          - heading "Privacidade e LGPD" [level=3] [ref=f192e87]
+          - paragraph [ref=f192e88]: Localização é dado sensível. O app pede consentimento explícito e só mostra a posição para quem é da sua família.
+        - listitem [ref=f192e89]:
+          - heading "Um plano para a família toda" [level=3] [ref=f192e96]
+          - paragraph [ref=f192e97]: O preço é por família, não por pessoa. Pai, mãe e filhos entram juntos, sem conta extra.
+        - listitem [ref=f192e98]:
+          - heading "Convite em um toque" [level=3] [ref=f192e103]
+          - paragraph [ref=f192e104]: O administrador convida cada familiar por e-mail. Quem recebe aceita pelo app e já aparece no mapa.
+        - listitem [ref=f192e105]:
+          - heading "Feito para o Brasil" [level=3] [ref=f192e109]
+          - paragraph [ref=f192e110]: Interface em português, pensada para famílias brasileiras, sem a complexidade dos apps gringos.
+      - generic [ref=f192e111]:
+        - generic [ref=f192e112]: Por que o Horus é diferente
+        - list [ref=f192e113]:
+          - listitem [ref=f192e114]: Em português
+          - listitem [ref=f192e115]: Preço por família
+          - listitem [ref=f192e116]: Sem histórico guardado no plano gratuito
+    - generic [ref=f192e118]:
+      - generic [ref=f192e119]:
+        - generic [ref=f192e120]: Como funciona
+        - heading "Três passos e a família está no mapa" [level=2] [ref=f192e121]
+        - paragraph [ref=f192e122]: Configurar leva poucos minutos. Depois disso, o Horus trabalha em silêncio.
+      - list [ref=f192e123]:
+        - listitem [ref=f192e124]:
+          - generic [ref=f192e125]: "1"
+          - heading "Crie sua família" [level=3] [ref=f192e131]
+          - paragraph [ref=f192e132]: "Faça seu cadastro, dê um nome ao grupo e pronto: você vira o administrador."
+        - listitem [ref=f192e133]:
+          - generic [ref=f192e134]: "2"
+          - heading "Convide por e-mail" [level=3] [ref=f192e139]
+          - paragraph [ref=f192e140]: Cada familiar recebe um convite válido por 48 horas e entra com um toque no app.
+        - listitem [ref=f192e141]:
+          - generic [ref=f192e142]: "3"
+          - heading "Abra o mapa" [level=3] [ref=f192e147]
+          - paragraph [ref=f192e148]: Todos aparecem com nome e horário da última atualização. Sem perguntar, sem esperar resposta.
+      - paragraph [ref=f192e149]: "Pensado para gastar pouca bateria: a localização em segundo plano usa o recurso nativo do celular."
+      - button "Quero ser avisado no lançamento" [ref=f192e154] [cursor=pointer]
+    - generic [ref=f192e156]:
+      - generic [ref=f192e157]:
+        - generic [ref=f192e158]: Quem usa
+        - heading "Famílias que pararam de perguntar" [level=2] [ref=f192e159]
+        - paragraph [ref=f192e160]: Histórias de quem trocou a mensagem repetitiva por um olhar no mapa.
+      - generic [ref=f192e161]:
+        - generic [ref=f192e162]:
+          - term [ref=f192e163]: "+250"
+          - definition [ref=f192e164]: famílias na lista de espera
+        - generic [ref=f192e165]:
+          - term [ref=f192e166]: 4,8 ★
+          - definition [ref=f192e167]: avaliação média no beta
+        - generic [ref=f192e168]:
+          - term [ref=f192e169]: 30 s
+          - definition [ref=f192e170]: entre uma atualização e outra
+      - list [ref=f192e171]:
+        - listitem [ref=f192e172]:
+          - figure "CM Carla M. Mãe de dois adolescentes" [ref=f192e173]:
+            - img "5 de 5 estrelas" [ref=f192e174]: ★★★★★
+            - blockquote [ref=f192e175]: Eu vivia mandando “chegou?” no grupo. Agora abro o mapa, vejo que já chegaram e sigo o meu dia.
+            - generic [ref=f192e176]:
+              - generic [ref=f192e177]: CM
+              - generic [ref=f192e178]:
+                - strong [ref=f192e179]: Carla M.
+                - generic [ref=f192e180]: Mãe de dois adolescentes
+        - listitem [ref=f192e181]:
+          - figure "RS Rafael S. Pai, trabalha em turnos" [ref=f192e182]:
+            - img "5 de 5 estrelas" [ref=f192e183]: ★★★★★
+            - blockquote [ref=f192e184]: Minha esposa sabe quando estou saindo do trabalho sem eu precisar avisar. Cortou metade das nossas ligações.
+            - generic [ref=f192e185]:
+              - generic [ref=f192e186]: RS
+              - generic [ref=f192e187]:
+                - strong [ref=f192e188]: Rafael S.
+                - generic [ref=f192e189]: Pai, trabalha em turnos
+        - listitem [ref=f192e190]:
+          - figure "JP Júlia P. Universitária, 19 anos" [ref=f192e191]:
+            - img "5 de 5 estrelas" [ref=f192e192]: ★★★★★
+            - blockquote [ref=f192e193]: Achei que ia me sentir vigiada, mas a família toda aparece no mapa, até meus pais. Ficou justo para todo mundo.
+            - generic [ref=f192e194]:
+              - generic [ref=f192e195]: JP
+              - generic [ref=f192e196]:
+                - strong [ref=f192e197]: Júlia P.
+                - generic [ref=f192e198]: Universitária, 19 anos
+        - listitem [ref=f192e199]:
+          - figure "N Dona Neide Avó, 62 anos" [ref=f192e200]:
+            - img "5 de 5 estrelas" [ref=f192e201]: ★★★★★
+            - blockquote [ref=f192e202]: Meu neto me ensinou a abrir, é só um mapa. Vi que ele já tinha chegado na escola e fiquei tranquila.
+            - generic [ref=f192e203]:
+              - generic [ref=f192e204]: "N"
+              - generic [ref=f192e205]:
+                - strong [ref=f192e206]: Dona Neide
+                - generic [ref=f192e207]: Avó, 62 anos
+      - paragraph [ref=f192e208]: Depoimentos e números fictícios, criados para este protótipo acadêmico.
+    - generic [ref=f192e210]:
+      - generic [ref=f192e211]:
+        - generic [ref=f192e212]: Preços
+        - heading "Um valor para a família inteira" [level=2] [ref=f192e213]
+        - paragraph [ref=f192e214]: Comece de graça. Quem entra na lista antes do lançamento garante o preço de fundador para sempre.
+      - generic [ref=f192e215]:
+        - article [ref=f192e216]:
+          - heading "Free" [level=3] [ref=f192e217]
+          - paragraph [ref=f192e218]: Para experimentar com a família.
+          - paragraph [ref=f192e219]:
+            - generic [ref=f192e220]: R$ 0
+            - generic [ref=f192e221]: para sempre
+          - list [ref=f192e222]:
+            - listitem [ref=f192e223]: ✓ Até 4 membros
+            - listitem [ref=f192e224]: ✓ Atualização a cada 5 minutos
+            - listitem [ref=f192e225]: ✓ Sem histórico de localização
+          - button "Começar grátis" [ref=f192e226] [cursor=pointer]
+        - article [ref=f192e227]:
+          - heading "Família" [level=3] [ref=f192e228]
+          - paragraph [ref=f192e229]: Tempo real para todo mundo.
+          - paragraph [ref=f192e230]:
+            - generic [ref=f192e231]: R$ 24,90
+            - generic [ref=f192e232]: /mês por família
+          - list [ref=f192e233]:
+            - listitem [ref=f192e234]: ✓ Membros ilimitados
+            - listitem [ref=f192e235]: ✓ Atualização a cada 30 segundos
+            - listitem [ref=f192e236]: ✓ Histórico de 30 dias
+            - listitem [ref=f192e237]: ✓ Um valor só, não por pessoa
+          - button "Entrar na lista" [ref=f192e238] [cursor=pointer]
+        - article [ref=f192e239]:
+          - generic [ref=f192e240]: Mais vantajoso
+          - heading "Fundador" [level=3] [ref=f192e241]
+          - paragraph [ref=f192e242]: Para quem entra antes do lançamento.
+          - paragraph [ref=f192e243]:
+            - generic [ref=f192e244]: R$ 24,90
+            - generic [ref=f192e245]: R$ 9,90
+            - generic [ref=f192e246]: /mês, para sempre
+          - list [ref=f192e247]:
+            - listitem [ref=f192e248]: ✓ Tudo do plano Família
+            - listitem [ref=f192e249]: ✓ Preço travado para sempre
+            - listitem [ref=f192e250]: ✓ Acesso antecipado ao app
+          - button "Quero ser fundador" [ref=f192e251] [cursor=pointer]
+      - paragraph [ref=f192e252]: Valores ilustrativos deste protótipo acadêmico. Nenhuma cobrança é realizada.
+    - generic [ref=f192e254]:
+      - generic [ref=f192e255]:
+        - generic [ref=f192e256]: Dúvidas
+        - heading "Perguntas frequentes" [level=2] [ref=f192e257]
+        - paragraph [ref=f192e258]: Ironicamente, aqui você pode perguntar à vontade.
+      - generic [ref=f192e259]:
+        - generic [ref=f192e260]:
+          - heading [level=3] [ref=f192e261]:
+            - button "O app gasta muita bateria?" [expanded] [ref=f192e262] [cursor=pointer]:
+              - text: O app gasta muita bateria?
+              - generic [aria-hidden] [ref=f192e263]: +
+          - region "O app gasta muita bateria?" [ref=f192e264]:
+            - paragraph [ref=f192e265]: O Horus usa o recurso nativo de localização em segundo plano do celular, com atualização a cada 30 segundos. Ele foi pensado para evitar consumo anormal, e isso é um dos critérios de sucesso do projeto.
+        - heading [level=3] [ref=f192e267]:
+          - button "Quem consegue ver a minha localização?" [ref=f192e268] [cursor=pointer]:
+            - text: Quem consegue ver a minha localização?
+            - generic [aria-hidden] [ref=f192e269]: +
+        - heading [level=3] [ref=f192e271]:
+          - button "Funciona em iPhone e Android?" [ref=f192e272] [cursor=pointer]:
+            - text: Funciona em iPhone e Android?
+            - generic [aria-hidden] [ref=f192e273]: +
+        - heading [level=3] [ref=f192e275]:
+          - button "Como convido alguém da família?" [ref=f192e276] [cursor=pointer]:
+            - text: Como convido alguém da família?
+            - generic [aria-hidden] [ref=f192e277]: +
+        - heading [level=3] [ref=f192e279]:
+          - button "Posso sair da família ou apagar minha conta?" [ref=f192e280] [cursor=pointer]:
+            - text: Posso sair da família ou apagar minha conta?
+            - generic [aria-hidden] [ref=f192e281]: +
+        - heading [level=3] [ref=f192e283]:
+          - button "Quando o app será lançado?" [ref=f192e284] [cursor=pointer]:
+            - text: Quando o app será lançado?
+            - generic [aria-hidden] [ref=f192e285]: +
+    - generic [ref=f192e287]:
+      - heading "Sua família merece parar de perguntar" [level=2] [ref=f192e288]
+      - paragraph [ref=f192e289]: Entre na lista de espera e garanta o plano Fundador por R$ 9,90/mês, para sempre.
+      - button "Entrar na lista de espera" [ref=f192e290] [cursor=pointer]
+  - contentinfo [ref=f192e291]:
+    - generic [ref=f192e292]:
+      - generic [ref=f192e293]:
+        - generic [ref=f192e294]: Horus Guardian
+        - paragraph [ref=f192e300]: Sua família, sempre por perto.
+      - navigation "Links do rodapé" [ref=f192e301]:
+        - link "Benefícios" [ref=f192e302] [cursor=pointer]:
+          - /url: "#beneficios"
+        - link "Como funciona" [ref=f192e303] [cursor=pointer]:
+          - /url: "#como-funciona"
+        - link "Preços" [ref=f192e304] [cursor=pointer]:
+          - /url: "#precos"
+        - link "FAQ" [ref=f192e305] [cursor=pointer]:
+          - /url: "#faq"
+    - paragraph [ref=f192e306]: Projeto acadêmico desenvolvido por Marlon · SPTech, Técnicas de Programação WEB FrontEnd 2026/2. Depoimentos, números e valores são fictícios.

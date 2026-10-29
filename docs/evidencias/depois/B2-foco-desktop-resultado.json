@@ -1,0 +1,312 @@
+{
+  "viewport": "1280x900",
+  "steps": [
+    {
+      "name": "desktop-overlay",
+      "opened": {
+        "dialogCount": 1,
+        "active": {
+          "tag": "DIV",
+          "text": "✕\nLista de espera\n\nDeixe seus dados e avisamos quando o app for lançado.\n\nNome\nE-mail\nEntrar na list",
+          "ariaLabel": null,
+          "className": "_dialog_1h193_13",
+          "insideDialog": true,
+          "path": "div#root > div > div"
+        },
+        "inert": {
+          "header": true,
+          "main": true,
+          "footer": true
+        },
+        "inertAttributes": {
+          "header": true,
+          "main": true,
+          "footer": true
+        },
+        "bodyOverflow": "hidden",
+        "horizontalScroll": false,
+        "dialogRect": {
+          "x": 420,
+          "y": 240.53231811523438,
+          "width": 440,
+          "height": 427.2031555175781,
+          "bottom": 667.7354736328125
+        },
+        "overlayRect": {
+          "x": 0,
+          "y": 0,
+          "width": 1280,
+          "height": 900,
+          "bottom": 900
+        },
+        "menu": {
+          "exists": false,
+          "burgerExpanded": "false"
+        }
+      },
+      "backgroundFocusAttempt": {
+        "activeTag": "DIV",
+        "activeAria": null,
+        "activeInsideDialog": true
+      },
+      "afterOverlay": {
+        "dialogCount": 0,
+        "active": {
+          "tag": "BUTTON",
+          "text": "Entrar na lista",
+          "ariaLabel": null,
+          "className": "_button_blvdq_1 _primary_blvdq_21 _md_blvdq_17  _cta_bcc31_76",
+          "insideDialog": false,
+          "path": "div#root > header > div > button"
+        },
+        "inert": {
+          "header": false,
+          "main": false,
+          "footer": false
+        },
+        "inertAttributes": {
+          "header": false,
+          "main": false,
+          "footer": false
+        },
+        "bodyOverflow": "",
+        "horizontalScroll": false,
+        "dialogRect": null,
+        "overlayRect": null,
+        "menu": {
+          "exists": false,
+          "burgerExpanded": "false"
+        }
+      },
+      "openerIsActive": true,
+      "axOpen": {
+        "nonIgnoredNodes": 28,
+        "landmarks": {},
+        "dialogNodes": [
+          {
+            "role": "dialog",
+            "name": "Lista de espera"
+          },
+          {
+            "role": "button",
+            "name": "Fechar"
+          },
+          {
+            "role": "heading",
+            "name": "Lista de espera"
+          },
+          {
+            "role": "textbox",
+            "name": "Nome"
+          },
+          {
+            "role": "textbox",
+            "name": "E-mail"
+          },
+          {
+            "role": "button",
+            "name": "Entrar na lista de espera"
+          }
+        ]
+      },
+      "axClosed": {
+        "nonIgnoredNodes": 541,
+        "landmarks": {
+          "banner": 1,
+          "main": 1,
+          "contentinfo": 1
+        },
+        "dialogNodes": [
+          {
+            "role": "button",
+            "name": "Entrar na lista"
+          },
+          {
+            "role": "heading",
+            "name": "Chega de perguntar “chegou?”"
+          },
+          {
+            "role": "button",
+            "name": "Entrar na lista de espera"
+          },
+          {
+            "role": "button",
+            "name": "Quero ser avisado no lançamento"
+          },
+          {
+            "role": "heading",
+            "name": "O app gasta muita bateria?"
+          },
+          {
+            "role": "heading",
+            "name": "Quem consegue ver a minha localização?"
+          },
+          {
+            "role": "heading",
+            "name": "Funciona em iPhone e Android?"
+          },
+          {
+            "role": "heading",
+            "name": "Como convido alguém da família?"
+          },
+          {
+            "role": "heading",
+            "name": "Posso sair da família ou apagar minha conta?"
+          },
+          {
+            "role": "heading",
+            "name": "Quando o app será lançado?"
+          },
+          {
+            "role": "heading",
+            "name": "Sua família merece parar de perguntar"
+          },
+          {
+            "role": "button",
+            "name": "Entrar na lista de espera"
+          },
+          {
+            "role": "heading",
+            "name": "Tudo o que você precisa para parar de perguntar"
+          },
+          {
+            "role": "heading",
+            "name": "Três passos e a família está no mapa"
+          },
+          {
+            "role": "heading",
+            "name": "Famílias que pararam de perguntar"
+          },
+          {
+            "role": "heading",
+            "name": "Um valor para a família inteira"
+          },
+          {
+            "role": "heading",
+            "name": "Free"
+          },
+          {
+            "role": "button",
+            "name": "Começar grátis"
+          },
+          {
+            "role": "heading",
+            "name": "Família"
+          },
+          {
+            "role": "button",
+            "name": "Entrar na lista"
+          },
+          {
+            "role": "heading",
+            "name": "Fundador"
+          },
+          {
+            "role": "button",
+            "name": "Quero ser fundador"
+          },
+          {
+            "role": "heading",
+            "name": "Perguntas frequentes"
+          },
+          {
+            "role": "button",
+            "name": "O app gasta muita bateria?"
+          },
+          {
+            "role": "button",
+            "name": "Quem consegue ver a minha localização?"
+          },
+          {
+            "role": "button",
+            "name": "Funciona em iPhone e Android?"
+          },
+          {
+            "role": "button",
+            "name": "Como convido alguém da família?"
+          },
+          {
+            "role": "button",
+            "name": "Posso sair da família ou apagar minha conta?"
+          },
+          {
+            "role": "button",
+            "name": "Quando o app será lançado?"
+          },
+          {
+            "role": "heading",
+            "name": "Tempo real de verdade"
+          },
+          {
+            "role": "heading",
+            "name": "Funciona em segundo plano"
+          },
+          {
+            "role": "heading",
+            "name": "Privacidade e LGPD"
+          },
+          {
+            "role": "heading",
+            "name": "Um plano para a família toda"
+          },
+          {
+            "role": "heading",
+            "name": "Convite em um toque"
+          },
+          {
+            "role": "heading",
+            "name": "Feito para o Brasil"
+          },
+          {
+            "role": "heading",
+            "name": "Crie sua família"
+          },
+          {
+            "role": "heading",
+            "name": "Convide por e-mail"
+          },
+          {
+            "role": "heading",
+            "name": "Abra o mapa"
+          }
+        ]
+      },
+      "clickThrough": {
+        "clicks": [],
+        "dialogCount": 0,
+        "active": "BUTTON",
+        "activeText": "Entrar na lista",
+        "activeAria": null
+      },
+      "afterClickThrough": {
+        "dialogCount": 0,
+        "active": {
+          "tag": "BUTTON",
+          "text": "Entrar na lista",
+          "ariaLabel": null,
+          "className": "_button_blvdq_1 _primary_blvdq_21 _md_blvdq_17  _cta_bcc31_76",
+          "insideDialog": false,
+          "path": "div#root > header > div > button"
+        },
+        "inert": {
+          "header": false,
+          "main": false,
+          "footer": false
+        },
+        "inertAttributes": {
+          "header": false,
+          "main": false,
+          "footer": false
+        },
+        "bodyOverflow": "",
+        "horizontalScroll": false,
+        "dialogRect": null,
+        "overlayRect": null,
+        "menu": {
+          "exists": false,
+          "burgerExpanded": "false"
+        }
+      }
+    }
+  ]
+}

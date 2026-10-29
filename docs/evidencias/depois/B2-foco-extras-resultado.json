@@ -1,0 +1,521 @@
+{
+  "steps": [
+    {
+      "name": "desktop-extras",
+      "hero": {
+        "opened": {
+          "dialogCount": 1,
+          "active": {
+            "tag": "DIV",
+            "text": "✕\nLista de espera\n\nDeixe seus dados e avisamos quando o app for lançado.\n\nNome\nE-mail\nEntrar na list",
+            "ariaLabel": null,
+            "className": "_dialog_1h193_13",
+            "insideDialog": true,
+            "path": "div#root > div > div"
+          },
+          "inert": {
+            "header": true,
+            "main": true,
+            "footer": true
+          },
+          "bodyOverflow": "hidden",
+          "horizontalScroll": false,
+          "menu": {
+            "exists": false,
+            "burgerExpanded": "false"
+          }
+        },
+        "closed": {
+          "dialogCount": 0,
+          "active": {
+            "tag": "BUTTON",
+            "text": "Entrar na lista de espera",
+            "ariaLabel": null,
+            "className": "_button_blvdq_1 _primary_blvdq_21 _lg_blvdq_18  ",
+            "insideDialog": false,
+            "path": "div#root > main#conteudo > section#topo > div > div > div > button"
+          },
+          "inert": {
+            "header": false,
+            "main": false,
+            "footer": false
+          },
+          "bodyOverflow": "",
+          "horizontalScroll": false,
+          "menu": {
+            "exists": false,
+            "burgerExpanded": "false"
+          }
+        },
+        "focusHeroCta": true,
+        "activeIsBurger": false
+      },
+      "final": {
+        "opened": {
+          "dialogCount": 1,
+          "active": {
+            "tag": "DIV",
+            "text": "✕\nLista de espera\n\nDeixe seus dados e avisamos quando o app for lançado.\n\nNome\nE-mail\nEntrar na list",
+            "ariaLabel": null,
+            "className": "_dialog_1h193_13",
+            "insideDialog": true,
+            "path": "div#root > div > div"
+          },
+          "inert": {
+            "header": true,
+            "main": true,
+            "footer": true
+          },
+          "bodyOverflow": "hidden",
+          "horizontalScroll": false,
+          "menu": {
+            "exists": false,
+            "burgerExpanded": "false"
+          }
+        },
+        "closed": {
+          "dialogCount": 0,
+          "active": {
+            "tag": "BUTTON",
+            "text": "Entrar na lista de espera",
+            "ariaLabel": null,
+            "className": "_button_blvdq_1 _primary_blvdq_21 _lg_blvdq_18  ",
+            "insideDialog": false,
+            "path": "div#root > main#conteudo > section#lista-de-espera > div > button"
+          },
+          "inert": {
+            "header": false,
+            "main": false,
+            "footer": false
+          },
+          "bodyOverflow": "",
+          "horizontalScroll": false,
+          "menu": {
+            "exists": false,
+            "burgerExpanded": "false"
+          }
+        },
+        "focusFinalCta": true,
+        "activeIsBurger": false
+      },
+      "focusTrap": [
+        {
+          "step": "inicial",
+          "tag": "DIV",
+          "text": "✕\nLista de espera\n\nDeixe seus dados e avisamos quando o app for lançado.\n\nNome\nE",
+          "ariaLabel": null,
+          "type": null,
+          "isDialog": true,
+          "insideDialog": true
+        },
+        {
+          "step": "Shift+Tab",
+          "tag": "BUTTON",
+          "text": "Entrar na lista de espera",
+          "ariaLabel": null,
+          "type": "submit",
+          "isDialog": false,
+          "insideDialog": true
+        },
+        {
+          "step": "Tab",
+          "tag": "BUTTON",
+          "text": "✕",
+          "ariaLabel": "Fechar",
+          "type": "button",
+          "isDialog": false,
+          "insideDialog": true
+        },
+        {
+          "step": "Shift+Tab",
+          "tag": "BUTTON",
+          "text": "Entrar na lista de espera",
+          "ariaLabel": null,
+          "type": "submit",
+          "isDialog": false,
+          "insideDialog": true
+        },
+        {
+          "step": "Tab",
+          "tag": "BUTTON",
+          "text": "✕",
+          "ariaLabel": "Fechar",
+          "type": "button",
+          "isDialog": false,
+          "insideDialog": true
+        },
+        {
+          "step": "Tab",
+          "tag": "INPUT",
+          "text": "",
+          "ariaLabel": null,
+          "type": null,
+          "isDialog": false,
+          "insideDialog": true
+        },
+        {
+          "step": "Tab",
+          "tag": "INPUT",
+          "text": "",
+          "ariaLabel": null,
+          "type": "email",
+          "isDialog": false,
+          "insideDialog": true
+        },
+        {
+          "step": "Tab",
+          "tag": "BUTTON",
+          "text": "Entrar na lista de espera",
+          "ariaLabel": null,
+          "type": "submit",
+          "isDialog": false,
+          "insideDialog": true
+        },
+        {
+          "step": "Tab",
+          "tag": "BUTTON",
+          "text": "✕",
+          "ariaLabel": "Fechar",
+          "type": "button",
+          "isDialog": false,
+          "insideDialog": true
+        },
+        {
+          "step": "Tab",
+          "tag": "INPUT",
+          "text": "",
+          "ariaLabel": null,
+          "type": null,
+          "isDialog": false,
+          "insideDialog": true
+        }
+      ],
+      "focusTrapClosed": {
+        "dialogCount": 0,
+        "active": {
+          "tag": "BUTTON",
+          "text": "Entrar na lista",
+          "ariaLabel": null,
+          "className": "_button_blvdq_1 _primary_blvdq_21 _md_blvdq_17  _cta_bcc31_76",
+          "insideDialog": false,
+          "path": "div#root > header > div > button"
+        },
+        "inert": {
+          "header": false,
+          "main": false,
+          "footer": false
+        },
+        "bodyOverflow": "",
+        "horizontalScroll": false,
+        "menu": {
+          "exists": false,
+          "burgerExpanded": "false"
+        }
+      },
+      "restore": {
+        "before": {
+          "footerInert": true,
+          "headerInert": false,
+          "mainInert": false,
+          "bodyOverflow": "auto"
+        },
+        "opened": {
+          "footerInert": true,
+          "headerInert": true,
+          "mainInert": true,
+          "bodyOverflow": "hidden"
+        },
+        "after": {
+          "footerInert": true,
+          "headerInert": false,
+          "mainInert": false,
+          "bodyOverflow": "auto",
+          "activeIsHeaderCta": true
+        }
+      },
+      "form": {
+        "filled": [
+          {
+            "value": "Marlon",
+            "type": "text",
+            "name": "",
+            "required": false,
+            "ariaRequired": null
+          },
+          {
+            "value": "marlon@example.com",
+            "type": "email",
+            "name": "",
+            "required": false,
+            "ariaRequired": null
+          }
+        ],
+        "successState": {
+          "dialogCount": 1,
+          "active": {
+            "tag": "BODY",
+            "text": "Pular para o conteúdo\nHorus Guardian\nBenefícios\nComo funciona\nPreços\nFAQ\nEntrar na lista\nLocalização",
+            "ariaLabel": null,
+            "className": "",
+            "insideDialog": false,
+            "path": ""
+          },
+          "inert": {
+            "header": true,
+            "main": true,
+            "footer": true
+          },
+          "bodyOverflow": "hidden",
+          "horizontalScroll": false,
+          "menu": {
+            "exists": false,
+            "burgerExpanded": "false"
+          }
+        },
+        "successText": "✕\nLista de espera\n✓\n\nPronto, Marlon! Você está na lista.\n\nQuando o Horus Guardian for lançado, o aviso chega em marlon@example.com.\n\nFechar",
+        "successCloseCount": 1,
+        "closed": {
+          "dialogCount": 0,
+          "active": {
+            "tag": "BUTTON",
+            "text": "Entrar na lista",
+            "ariaLabel": null,
+            "className": "_button_blvdq_1 _primary_blvdq_21 _md_blvdq_17  _cta_bcc31_76",
+            "insideDialog": false,
+            "path": "div#root > header > div > button"
+          },
+          "inert": {
+            "header": false,
+            "main": false,
+            "footer": false
+          },
+          "bodyOverflow": "",
+          "horizontalScroll": false,
+          "menu": {
+            "exists": false,
+            "burgerExpanded": "false"
+          }
+        },
+        "focusHeaderCta": true,
+        "axSuccess": {
+          "nonIgnoredNodes": 28,
+          "landmarks": {},
+          "nodes": [
+            {
+              "role": "dialog",
+              "name": "Lista de espera"
+            },
+            {
+              "role": "button",
+              "name": "Fechar"
+            },
+            {
+              "role": "heading",
+              "name": "Lista de espera"
+            },
+            {
+              "role": "button",
+              "name": "Fechar"
+            }
+          ]
+        }
+      },
+      "repetitions": [
+        {
+          "ciclo": 1,
+          "opened": {
+            "dialogCount": 1,
+            "active": {
+              "tag": "DIV",
+              "text": "✕\nLista de espera\n\nDeixe seus dados e avisamos quando o app for lançado.\n\nNome\nE-mail\nEntrar na list",
+              "ariaLabel": null,
+              "className": "_dialog_1h193_13",
+              "insideDialog": true,
+              "path": "div#root > div > div"
+            },
+            "inert": {
+              "header": true,
+              "main": true,
+              "footer": true
+            },
+            "bodyOverflow": "hidden",
+            "horizontalScroll": false,
+            "menu": {
+              "exists": false,
+              "burgerExpanded": "false"
+            }
+          },
+          "closed": {
+            "dialogCount": 0,
+            "active": {
+              "tag": "BUTTON",
+              "text": "Entrar na lista",
+              "ariaLabel": null,
+              "className": "_button_blvdq_1 _primary_blvdq_21 _md_blvdq_17  _cta_bcc31_76",
+              "insideDialog": false,
+              "path": "div#root > header > div > button"
+            },
+            "inert": {
+              "header": false,
+              "main": false,
+              "footer": false
+            },
+            "bodyOverflow": "",
+            "horizontalScroll": false,
+            "menu": {
+              "exists": false,
+              "burgerExpanded": "false"
+            }
+          },
+          "focusHeaderCta": true
+        },
+        {
+          "ciclo": 2,
+          "opened": {
+            "dialogCount": 1,
+            "active": {
+              "tag": "DIV",
+              "text": "✕\nLista de espera\n\nDeixe seus dados e avisamos quando o app for lançado.\n\nNome\nE-mail\nEntrar na list",
+              "ariaLabel": null,
+              "className": "_dialog_1h193_13",
+              "insideDialog": true,
+              "path": "div#root > div > div"
+            },
+            "inert": {
+              "header": true,
+              "main": true,
+              "footer": true
+            },
+            "bodyOverflow": "hidden",
+            "horizontalScroll": false,
+            "menu": {
+              "exists": false,
+              "burgerExpanded": "false"
+            }
+          },
+          "closed": {
+            "dialogCount": 0,
+            "active": {
+              "tag": "BUTTON",
+              "text": "Entrar na lista",
+              "ariaLabel": null,
+              "className": "_button_blvdq_1 _primary_blvdq_21 _md_blvdq_17  _cta_bcc31_76",
+              "insideDialog": false,
+              "path": "div#root > header > div > button"
+            },
+            "inert": {
+              "header": false,
+              "main": false,
+              "footer": false
+            },
+            "bodyOverflow": "",
+            "horizontalScroll": false,
+            "menu": {
+              "exists": false,
+              "burgerExpanded": "false"
+            }
+          },
+          "focusHeaderCta": true
+        }
+      ],
+      "mobileOtherTriggers": {
+        "hero": {
+          "opened": {
+            "dialogCount": 1,
+            "active": {
+              "tag": "DIV",
+              "text": "✕\nLista de espera\n\nDeixe seus dados e avisamos quando o app for lançado.\n\nNome\nE-mail\nEntrar na list",
+              "ariaLabel": null,
+              "className": "_dialog_1h193_13",
+              "insideDialog": true,
+              "path": "div#root > div > div"
+            },
+            "inert": {
+              "header": true,
+              "main": true,
+              "footer": true
+            },
+            "bodyOverflow": "hidden",
+            "horizontalScroll": false,
+            "menu": {
+              "exists": false,
+              "burgerExpanded": "false"
+            }
+          },
+          "closed": {
+            "dialogCount": 0,
+            "active": {
+              "tag": "BUTTON",
+              "text": "Entrar na lista de espera",
+              "ariaLabel": null,
+              "className": "_button_blvdq_1 _primary_blvdq_21 _lg_blvdq_18  ",
+              "insideDialog": false,
+              "path": "div#root > main#conteudo > section#topo > div > div > div > button"
+            },
+            "inert": {
+              "header": false,
+              "main": false,
+              "footer": false
+            },
+            "bodyOverflow": "",
+            "horizontalScroll": false,
+            "menu": {
+              "exists": false,
+              "burgerExpanded": "false"
+            }
+          },
+          "focusHeroCta": true,
+          "activeIsBurger": false
+        },
+        "final": {
+          "opened": {
+            "dialogCount": 1,
+            "active": {
+              "tag": "DIV",
+              "text": "✕\nLista de espera\n\nDeixe seus dados e avisamos quando o app for lançado.\n\nNome\nE-mail\nEntrar na list",
+              "ariaLabel": null,
+              "className": "_dialog_1h193_13",
+              "insideDialog": true,
+              "path": "div#root > div > div"
+            },
+            "inert": {
+              "header": true,
+              "main": true,
+              "footer": true
+            },
+            "bodyOverflow": "hidden",
+            "horizontalScroll": false,
+            "menu": {
+              "exists": false,
+              "burgerExpanded": "false"
+            }
+          },
+          "closed": {
+            "dialogCount": 0,
+            "active": {
+              "tag": "BUTTON",
+              "text": "Entrar na lista de espera",
+              "ariaLabel": null,
+              "className": "_button_blvdq_1 _primary_blvdq_21 _lg_blvdq_18  ",
+              "insideDialog": false,
+              "path": "div#root > main#conteudo > section#lista-de-espera > div > button"
+            },
+            "inert": {
+              "header": false,
+              "main": false,
+              "footer": false
+            },
+            "bodyOverflow": "",
+            "horizontalScroll": false,
+            "menu": {
+              "exists": false,
+              "burgerExpanded": "false"
+            }
+          },
+          "focusFinalCta": true,
+          "activeIsBurger": false
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "data": "2026-10-29",
+  "viewport": "360x800",
+  "acionamento": "menu mobile > CTA > modal",
+  "sequencia": [
+    { "passo": "inicial", "tag": "DIV", "isDialog": true, "insideDialog": true },
+    { "passo": "Shift+Tab", "tag": "BUTTON", "text": "Entrar na lista de espera", "type": "submit", "insideDialog": true },
+    { "passo": "Tab", "tag": "BUTTON", "text": "✕", "ariaLabel": "Fechar", "type": "button", "insideDialog": true },
+    { "passo": "Tab", "tag": "INPUT", "text": "", "insideDialog": true },
+    { "passo": "Tab", "tag": "INPUT", "type": "email", "insideDialog": true },
+    { "passo": "Tab", "tag": "BUTTON", "text": "Entrar na lista de espera", "type": "submit", "insideDialog": true },
+    { "passo": "Tab", "tag": "BUTTON", "text": "✕", "ariaLabel": "Fechar", "type": "button", "insideDialog": true }
+  ],
+  "todosDentroDoDialogo": true,
+  "fechado": {
+    "dialogCount": 0,
+    "activeIsBurger": true,
+    "activeLabel": "Abrir menu",
+    "burgerExpanded": "false",
+    "inert": { "header": false, "main": false, "footer": false },
+    "bodyOverflow": ""
+  }
+}

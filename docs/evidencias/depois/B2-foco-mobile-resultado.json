@@ -1,0 +1,870 @@
+{
+  "viewport": "360x800",
+  "steps": [
+    {
+      "name": "mobile",
+      "menuOpen": {
+        "dialogCount": 0,
+        "active": {
+          "tag": "BUTTON",
+          "text": "",
+          "ariaLabel": "Fechar menu",
+          "ariaExpanded": "true",
+          "className": "_burger_bcc31_41",
+          "insideDialog": false,
+          "path": "div#root > header > div > button"
+        },
+        "inert": {
+          "header": false,
+          "main": false,
+          "footer": false
+        },
+        "inertAttributes": {
+          "header": false,
+          "main": false,
+          "footer": false
+        },
+        "bodyOverflow": "",
+        "horizontalScroll": false,
+        "dialogRect": null,
+        "overlayRect": null,
+        "menu": {
+          "exists": true,
+          "burgerExpanded": "true",
+          "burgerLabel": "Fechar menu"
+        }
+      },
+      "openedEscape": {
+        "dialogCount": 1,
+        "active": {
+          "tag": "DIV",
+          "text": "✕\nLista de espera\n\nDeixe seus dados e avisamos quando o app for lançado.\n\nNome\nE-mail\nEntrar na list",
+          "ariaLabel": null,
+          "ariaExpanded": null,
+          "className": "_dialog_1h193_13",
+          "insideDialog": true,
+          "path": "div#root > div > div"
+        },
+        "inert": {
+          "header": true,
+          "main": true,
+          "footer": true
+        },
+        "inertAttributes": {
+          "header": true,
+          "main": true,
+          "footer": true
+        },
+        "bodyOverflow": "hidden",
+        "horizontalScroll": false,
+        "dialogRect": {
+          "x": 16,
+          "y": 188.56317138671875,
+          "width": 328,
+          "height": 427.203125,
+          "bottom": 615.7662963867188
+        },
+        "overlayRect": {
+          "x": 0,
+          "y": 0,
+          "width": 360,
+          "height": 800,
+          "bottom": 800
+        },
+        "menu": {
+          "exists": false,
+          "burgerExpanded": "false",
+          "burgerLabel": "Abrir menu"
+        }
+      },
+      "afterEscape": {
+        "dialogCount": 0,
+        "active": {
+          "tag": "BUTTON",
+          "text": "",
+          "ariaLabel": "Abrir menu",
+          "ariaExpanded": "false",
+          "className": "_burger_bcc31_41",
+          "insideDialog": false,
+          "path": "div#root > header > div > button"
+        },
+        "inert": {
+          "header": false,
+          "main": false,
+          "footer": false
+        },
+        "inertAttributes": {
+          "header": false,
+          "main": false,
+          "footer": false
+        },
+        "bodyOverflow": "",
+        "horizontalScroll": false,
+        "dialogRect": null,
+        "overlayRect": null,
+        "menu": {
+          "exists": false,
+          "burgerExpanded": "false",
+          "burgerLabel": "Abrir menu"
+        }
+      },
+      "focusAfterEscape": {
+        "activeIsBurger": true,
+        "activeTag": "BUTTON",
+        "activeLabel": "Abrir menu",
+        "burgerExpanded": "false",
+        "menuExists": false
+      },
+      "openedX": {
+        "dialogCount": 1,
+        "active": {
+          "tag": "DIV",
+          "text": "✕\nLista de espera\n\nDeixe seus dados e avisamos quando o app for lançado.\n\nNome\nE-mail\nEntrar na list",
+          "ariaLabel": null,
+          "ariaExpanded": null,
+          "className": "_dialog_1h193_13",
+          "insideDialog": true,
+          "path": "div#root > div > div"
+        },
+        "inert": {
+          "header": true,
+          "main": true,
+          "footer": true
+        },
+        "inertAttributes": {
+          "header": true,
+          "main": true,
+          "footer": true
+        },
+        "bodyOverflow": "hidden",
+        "horizontalScroll": false,
+        "dialogRect": {
+          "x": 16,
+          "y": 188.3567352294922,
+          "width": 328,
+          "height": 427.203125,
+          "bottom": 615.5598602294922
+        },
+        "overlayRect": {
+          "x": 0,
+          "y": 0,
+          "width": 360,
+          "height": 800,
+          "bottom": 800
+        },
+        "menu": {
+          "exists": false,
+          "burgerExpanded": "false",
+          "burgerLabel": "Abrir menu"
+        }
+      },
+      "afterX": {
+        "dialogCount": 0,
+        "active": {
+          "tag": "BUTTON",
+          "text": "",
+          "ariaLabel": "Abrir menu",
+          "ariaExpanded": "false",
+          "className": "_burger_bcc31_41",
+          "insideDialog": false,
+          "path": "div#root > header > div > button"
+        },
+        "inert": {
+          "header": false,
+          "main": false,
+          "footer": false
+        },
+        "inertAttributes": {
+          "header": false,
+          "main": false,
+          "footer": false
+        },
+        "bodyOverflow": "",
+        "horizontalScroll": false,
+        "dialogRect": null,
+        "overlayRect": null,
+        "menu": {
+          "exists": false,
+          "burgerExpanded": "false",
+          "burgerLabel": "Abrir menu"
+        }
+      },
+      "focusAfterX": {
+        "activeIsBurger": true,
+        "activeTag": "BUTTON",
+        "activeLabel": "Abrir menu",
+        "burgerExpanded": "false",
+        "menuExists": false
+      },
+      "openedOverlay": {
+        "dialogCount": 1,
+        "active": {
+          "tag": "DIV",
+          "text": "✕\nLista de espera\n\nDeixe seus dados e avisamos quando o app for lançado.\n\nNome\nE-mail\nEntrar na list",
+          "ariaLabel": null,
+          "ariaExpanded": null,
+          "className": "_dialog_1h193_13",
+          "insideDialog": true,
+          "path": "div#root > div > div"
+        },
+        "inert": {
+          "header": true,
+          "main": true,
+          "footer": true
+        },
+        "inertAttributes": {
+          "header": true,
+          "main": true,
+          "footer": true
+        },
+        "bodyOverflow": "hidden",
+        "horizontalScroll": false,
+        "dialogRect": {
+          "x": 16,
+          "y": 187.5679168701172,
+          "width": 328,
+          "height": 427.203125,
+          "bottom": 614.7710418701172
+        },
+        "overlayRect": {
+          "x": 0,
+          "y": 0,
+          "width": 360,
+          "height": 800,
+          "bottom": 800
+        },
+        "menu": {
+          "exists": false,
+          "burgerExpanded": "false",
+          "burgerLabel": "Abrir menu"
+        }
+      },
+      "afterOverlay": {
+        "dialogCount": 0,
+        "active": {
+          "tag": "BUTTON",
+          "text": "",
+          "ariaLabel": "Abrir menu",
+          "ariaExpanded": "false",
+          "className": "_burger_bcc31_41",
+          "insideDialog": false,
+          "path": "div#root > header > div > button"
+        },
+        "inert": {
+          "header": false,
+          "main": false,
+          "footer": false
+        },
+        "inertAttributes": {
+          "header": false,
+          "main": false,
+          "footer": false
+        },
+        "bodyOverflow": "",
+        "horizontalScroll": false,
+        "dialogRect": null,
+        "overlayRect": null,
+        "menu": {
+          "exists": false,
+          "burgerExpanded": "false",
+          "burgerLabel": "Abrir menu"
+        }
+      },
+      "focusAfterOverlay": {
+        "activeIsBurger": true,
+        "activeTag": "BUTTON",
+        "activeLabel": "Abrir menu",
+        "burgerExpanded": "false",
+        "menuExists": false
+      },
+      "clickThrough": {
+        "clicks": [],
+        "dialogCount": 0,
+        "menuExists": false,
+        "burgerExpanded": "false",
+        "activeTag": "BUTTON",
+        "activeLabel": "Abrir menu"
+      },
+      "afterClickThrough": {
+        "dialogCount": 0,
+        "active": {
+          "tag": "BUTTON",
+          "text": "",
+          "ariaLabel": "Abrir menu",
+          "ariaExpanded": "false",
+          "className": "_burger_bcc31_41",
+          "insideDialog": false,
+          "path": "div#root > header > div > button"
+        },
+        "inert": {
+          "header": false,
+          "main": false,
+          "footer": false
+        },
+        "inertAttributes": {
+          "header": false,
+          "main": false,
+          "footer": false
+        },
+        "bodyOverflow": "",
+        "horizontalScroll": false,
+        "dialogRect": null,
+        "overlayRect": null,
+        "menu": {
+          "exists": false,
+          "burgerExpanded": "false",
+          "burgerLabel": "Abrir menu"
+        }
+      },
+      "keyboardMenuOpen": {
+        "dialogCount": 0,
+        "active": {
+          "tag": "BUTTON",
+          "text": "",
+          "ariaLabel": "Fechar menu",
+          "ariaExpanded": "true",
+          "className": "_burger_bcc31_41",
+          "insideDialog": false,
+          "path": "div#root > header > div > button"
+        },
+        "inert": {
+          "header": false,
+          "main": false,
+          "footer": false
+        },
+        "inertAttributes": {
+          "header": false,
+          "main": false,
+          "footer": false
+        },
+        "bodyOverflow": "",
+        "horizontalScroll": false,
+        "dialogRect": null,
+        "overlayRect": null,
+        "menu": {
+          "exists": true,
+          "burgerExpanded": "true",
+          "burgerLabel": "Fechar menu"
+        }
+      },
+      "keyboardEnterOpened": {
+        "dialogCount": 1,
+        "active": {
+          "tag": "DIV",
+          "text": "✕\nLista de espera\n\nDeixe seus dados e avisamos quando o app for lançado.\n\nNome\nE-mail\nEntrar na list",
+          "ariaLabel": null,
+          "ariaExpanded": null,
+          "className": "_dialog_1h193_13",
+          "insideDialog": true,
+          "path": "div#root > div > div"
+        },
+        "inert": {
+          "header": true,
+          "main": true,
+          "footer": true
+        },
+        "inertAttributes": {
+          "header": true,
+          "main": true,
+          "footer": true
+        },
+        "bodyOverflow": "hidden",
+        "horizontalScroll": false,
+        "dialogRect": {
+          "x": 16,
+          "y": 187.56564331054688,
+          "width": 328,
+          "height": 427.2031555175781,
+          "bottom": 614.768798828125
+        },
+        "overlayRect": {
+          "x": 0,
+          "y": 0,
+          "width": 360,
+          "height": 800,
+          "bottom": 800
+        },
+        "menu": {
+          "exists": false,
+          "burgerExpanded": "false",
+          "burgerLabel": "Abrir menu"
+        }
+      },
+      "keyboardEnterAfterEscape": {
+        "dialogCount": 0,
+        "active": {
+          "tag": "BUTTON",
+          "text": "",
+          "ariaLabel": "Abrir menu",
+          "ariaExpanded": "false",
+          "className": "_burger_bcc31_41",
+          "insideDialog": false,
+          "path": "div#root > header > div > button"
+        },
+        "inert": {
+          "header": false,
+          "main": false,
+          "footer": false
+        },
+        "inertAttributes": {
+          "header": false,
+          "main": false,
+          "footer": false
+        },
+        "bodyOverflow": "",
+        "horizontalScroll": false,
+        "dialogRect": null,
+        "overlayRect": null,
+        "menu": {
+          "exists": false,
+          "burgerExpanded": "false",
+          "burgerLabel": "Abrir menu"
+        }
+      },
+      "focusAfterKeyboardEnter": {
+        "activeIsBurger": true,
+        "activeTag": "BUTTON",
+        "activeLabel": "Abrir menu",
+        "burgerExpanded": "false"
+      },
+      "keyboardSpaceOpened": {
+        "dialogCount": 1,
+        "active": {
+          "tag": "DIV",
+          "text": "✕\nLista de espera\n\nDeixe seus dados e avisamos quando o app for lançado.\n\nNome\nE-mail\nEntrar na list",
+          "ariaLabel": null,
+          "ariaExpanded": null,
+          "className": "_dialog_1h193_13",
+          "insideDialog": true,
+          "path": "div#root > div > div"
+        },
+        "inert": {
+          "header": true,
+          "main": true,
+          "footer": true
+        },
+        "inertAttributes": {
+          "header": true,
+          "main": true,
+          "footer": true
+        },
+        "bodyOverflow": "hidden",
+        "horizontalScroll": false,
+        "dialogRect": {
+          "x": 16,
+          "y": 188.36566162109375,
+          "width": 328,
+          "height": 427.203125,
+          "bottom": 615.5687866210938
+        },
+        "overlayRect": {
+          "x": 0,
+          "y": 0,
+          "width": 360,
+          "height": 800,
+          "bottom": 800
+        },
+        "menu": {
+          "exists": false,
+          "burgerExpanded": "false",
+          "burgerLabel": "Abrir menu"
+        }
+      },
+      "keyboardSpaceAfterEscape": {
+        "dialogCount": 0,
+        "active": {
+          "tag": "BUTTON",
+          "text": "",
+          "ariaLabel": "Abrir menu",
+          "ariaExpanded": "false",
+          "className": "_burger_bcc31_41",
+          "insideDialog": false,
+          "path": "div#root > header > div > button"
+        },
+        "inert": {
+          "header": false,
+          "main": false,
+          "footer": false
+        },
+        "inertAttributes": {
+          "header": false,
+          "main": false,
+          "footer": false
+        },
+        "bodyOverflow": "",
+        "horizontalScroll": false,
+        "dialogRect": null,
+        "overlayRect": null,
+        "menu": {
+          "exists": false,
+          "burgerExpanded": "false",
+          "burgerLabel": "Abrir menu"
+        }
+      },
+      "focusAfterKeyboardSpace": {
+        "activeIsBurger": true,
+        "activeTag": "BUTTON",
+        "activeLabel": "Abrir menu",
+        "burgerExpanded": "false"
+      },
+      "repetitions": [
+        {
+          "ciclo": 1,
+          "opened": {
+            "dialogCount": 1,
+            "active": {
+              "tag": "DIV",
+              "text": "✕\nLista de espera\n\nDeixe seus dados e avisamos quando o app for lançado.\n\nNome\nE-mail\nEntrar na list",
+              "ariaLabel": null,
+              "ariaExpanded": null,
+              "className": "_dialog_1h193_13",
+              "insideDialog": true,
+              "path": "div#root > div > div"
+            },
+            "inert": {
+              "header": true,
+              "main": true,
+              "footer": true
+            },
+            "inertAttributes": {
+              "header": true,
+              "main": true,
+              "footer": true
+            },
+            "bodyOverflow": "hidden",
+            "horizontalScroll": false,
+            "dialogRect": {
+              "x": 16,
+              "y": 188.271728515625,
+              "width": 328,
+              "height": 427.203125,
+              "bottom": 615.474853515625
+            },
+            "overlayRect": {
+              "x": 0,
+              "y": 0,
+              "width": 360,
+              "height": 800,
+              "bottom": 800
+            },
+            "menu": {
+              "exists": false,
+              "burgerExpanded": "false",
+              "burgerLabel": "Abrir menu"
+            }
+          },
+          "closed": {
+            "dialogCount": 0,
+            "active": {
+              "tag": "BUTTON",
+              "text": "",
+              "ariaLabel": "Abrir menu",
+              "ariaExpanded": "false",
+              "className": "_burger_bcc31_41",
+              "insideDialog": false,
+              "path": "div#root > header > div > button"
+            },
+            "inert": {
+              "header": false,
+              "main": false,
+              "footer": false
+            },
+            "inertAttributes": {
+              "header": false,
+              "main": false,
+              "footer": false
+            },
+            "bodyOverflow": "",
+            "horizontalScroll": false,
+            "dialogRect": null,
+            "overlayRect": null,
+            "menu": {
+              "exists": false,
+              "burgerExpanded": "false",
+              "burgerLabel": "Abrir menu"
+            }
+          },
+          "focus": {
+            "activeIsBurger": true,
+            "burgerExpanded": "false",
+            "menuExists": false
+          }
+        },
+        {
+          "ciclo": 2,
+          "opened": {
+            "dialogCount": 1,
+            "active": {
+              "tag": "DIV",
+              "text": "✕\nLista de espera\n\nDeixe seus dados e avisamos quando o app for lançado.\n\nNome\nE-mail\nEntrar na list",
+              "ariaLabel": null,
+              "ariaExpanded": null,
+              "className": "_dialog_1h193_13",
+              "insideDialog": true,
+              "path": "div#root > div > div"
+            },
+            "inert": {
+              "header": true,
+              "main": true,
+              "footer": true
+            },
+            "inertAttributes": {
+              "header": true,
+              "main": true,
+              "footer": true
+            },
+            "bodyOverflow": "hidden",
+            "horizontalScroll": false,
+            "dialogRect": {
+              "x": 16,
+              "y": 188.19961547851562,
+              "width": 328,
+              "height": 427.2030944824219,
+              "bottom": 615.4027099609375
+            },
+            "overlayRect": {
+              "x": 0,
+              "y": 0,
+              "width": 360,
+              "height": 800,
+              "bottom": 800
+            },
+            "menu": {
+              "exists": false,
+              "burgerExpanded": "false",
+              "burgerLabel": "Abrir menu"
+            }
+          },
+          "closed": {
+            "dialogCount": 0,
+            "active": {
+              "tag": "BUTTON",
+              "text": "",
+              "ariaLabel": "Abrir menu",
+              "ariaExpanded": "false",
+              "className": "_burger_bcc31_41",
+              "insideDialog": false,
+              "path": "div#root > header > div > button"
+            },
+            "inert": {
+              "header": false,
+              "main": false,
+              "footer": false
+            },
+            "inertAttributes": {
+              "header": false,
+              "main": false,
+              "footer": false
+            },
+            "bodyOverflow": "",
+            "horizontalScroll": false,
+            "dialogRect": null,
+            "overlayRect": null,
+            "menu": {
+              "exists": false,
+              "burgerExpanded": "false",
+              "burgerLabel": "Abrir menu"
+            }
+          },
+          "focus": {
+            "activeIsBurger": true,
+            "burgerExpanded": "false",
+            "menuExists": false
+          }
+        }
+      ],
+      "axOpen": {
+        "nonIgnoredNodes": 28,
+        "landmarks": {},
+        "dialogNodes": [
+          {
+            "role": "dialog",
+            "name": "Lista de espera"
+          },
+          {
+            "role": "button",
+            "name": "Fechar"
+          },
+          {
+            "role": "heading",
+            "name": "Lista de espera"
+          },
+          {
+            "role": "textbox",
+            "name": "Nome"
+          },
+          {
+            "role": "textbox",
+            "name": "E-mail"
+          },
+          {
+            "role": "button",
+            "name": "Entrar na lista de espera"
+          }
+        ]
+      },
+      "axClosed": {
+        "nonIgnoredNodes": 555,
+        "landmarks": {
+          "banner": 1,
+          "main": 1,
+          "contentinfo": 1
+        },
+        "dialogNodes": [
+          {
+            "role": "button",
+            "name": "Abrir menu"
+          },
+          {
+            "role": "heading",
+            "name": "Chega de perguntar “chegou?”"
+          },
+          {
+            "role": "button",
+            "name": "Entrar na lista de espera"
+          },
+          {
+            "role": "button",
+            "name": "Quero ser avisado no lançamento"
+          },
+          {
+            "role": "heading",
+            "name": "O app gasta muita bateria?"
+          },
+          {
+            "role": "heading",
+            "name": "Quem consegue ver a minha localização?"
+          },
+          {
+            "role": "heading",
+            "name": "Funciona em iPhone e Android?"
+          },
+          {
+            "role": "heading",
+            "name": "Como convido alguém da família?"
+          },
+          {
+            "role": "heading",
+            "name": "Posso sair da família ou apagar minha conta?"
+          },
+          {
+            "role": "heading",
+            "name": "Quando o app será lançado?"
+          },
+          {
+            "role": "heading",
+            "name": "Sua família merece parar de perguntar"
+          },
+          {
+            "role": "button",
+            "name": "Entrar na lista de espera"
+          },
+          {
+            "role": "heading",
+            "name": "Tudo o que você precisa para parar de perguntar"
+          },
+          {
+            "role": "heading",
+            "name": "Três passos e a família está no mapa"
+          },
+          {
+            "role": "heading",
+            "name": "Famílias que pararam de perguntar"
+          },
+          {
+            "role": "heading",
+            "name": "Um valor para a família inteira"
+          },
+          {
+            "role": "heading",
+            "name": "Free"
+          },
+          {
+            "role": "button",
+            "name": "Começar grátis"
+          },
+          {
+            "role": "heading",
+            "name": "Família"
+          },
+          {
+            "role": "button",
+            "name": "Entrar na lista"
+          },
+          {
+            "role": "heading",
+            "name": "Fundador"
+          },
+          {
+            "role": "button",
+            "name": "Quero ser fundador"
+          },
+          {
+            "role": "heading",
+            "name": "Perguntas frequentes"
+          },
+          {
+            "role": "button",
+            "name": "O app gasta muita bateria?"
+          },
+          {
+            "role": "button",
+            "name": "Quem consegue ver a minha localização?"
+          },
+          {
+            "role": "button",
+            "name": "Funciona em iPhone e Android?"
+          },
+          {
+            "role": "button",
+            "name": "Como convido alguém da família?"
+          },
+          {
+            "role": "button",
+            "name": "Posso sair da família ou apagar minha conta?"
+          },
+          {
+            "role": "button",
+            "name": "Quando o app será lançado?"
+          },
+          {
+            "role": "heading",
+            "name": "Tempo real de verdade"
+          },
+          {
+            "role": "heading",
+            "name": "Funciona em segundo plano"
+          },
+          {
+            "role": "heading",
+            "name": "Privacidade e LGPD"
+          },
+          {
+            "role": "heading",
+            "name": "Um plano para a família toda"
+          },
+          {
+            "role": "heading",
+            "name": "Convite em um toque"
+          },
+          {
+            "role": "heading",
+            "name": "Feito para o Brasil"
+          },
+          {
+            "role": "heading",
+            "name": "Crie sua família"
+          },
+          {
+            "role": "heading",
+            "name": "Convide por e-mail"
+          },
+          {
+            "role": "heading",
+            "name": "Abra o mapa"
+          }
+        ]
+      }
+    }
+  ]
+}
