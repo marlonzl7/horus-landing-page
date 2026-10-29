@@ -1,0 +1,1198 @@
+{
+  "data": "2026-10-29",
+  "issue": "B2",
+  "statusGeral": "Complemento de foco aprovado nos 8 testes obrigatorios. Sem falhas obrigatorias; ressalva nao bloqueante: no estado de sucesso o activeElement fica em BODY, mas o foco retorna ao CTA do header ao fechar. Isolamento B2 segue aprovado.",
+  "statusGeralAntesDoComplemento": "Isolamento do fundo aprovado; item 7 (retorno de foco) com falha observada no fechamento por clique no overlay. Validacao geral nao declarada como totalmente aprovada.",
+  "aplicacao": "http://localhost:5173/",
+  "navegador": "Chromium via Playwright MCP",
+  "viewports": [
+    "1280x900",
+    "360x800"
+  ],
+  "head": "f021874",
+  "arquivosCorrigidos": [
+    "src/shared/ui/Modal/Modal.jsx",
+    "src/widgets/header/Header.jsx"
+  ],
+  "codigoAlteradoDuranteValidacao": false,
+  "commitRealizado": false,
+  "metodoArvoreAcessibilidade": "CDP Accessibility.getFullAXTree (ignored=false), via Playwright MCP. O browser_snapshot do MCP usa ariaSnapshot baseado no DOM e inclui nos inertes; ver limitacoes.",
+  "escopoAtual": "Complemento de foco do B2: fechamento pelo overlay, retorno de foco no mobile e verificacao de regressoes, apos o isolamento por inert.",
+  "checks": [
+    {
+      "id": 1,
+      "nome": "Desktop: CTA do header, fechamento pelo overlay e ausencia de clique no fundo",
+      "status": "pass",
+      "observado": {
+        "viewport": "1280x900",
+        "acionador": "header > button \"Entrar na lista\"",
+        "aberto": {
+          "dialogCount": 1,
+          "activeNoDialogo": true,
+          "inert": {
+            "header": true,
+            "main": true,
+            "footer": true
+          },
+          "bodyOverflow": "hidden",
+          "overlayRect": {
+            "x": 0,
+            "y": 0,
+            "width": 1280,
+            "height": 900
+          },
+          "dialogRect": {
+            "x": 420,
+            "y": 240.53231811523438,
+            "width": 440,
+            "height": 427.2031555175781
+          }
+        },
+        "tentativaFocoFundo": {
+          "link": "Pular para o conteúdo",
+          "activeTag": "DIV",
+          "activeInsideDialog": true
+        },
+        "fechamentoOverlay": {
+          "ponto": {
+            "x": 5,
+            "y": 450
+          },
+          "dialogCount": 0,
+          "activeTag": "BUTTON",
+          "activeText": "Entrar na lista",
+          "activeIsOpener": true,
+          "inert": {
+            "header": false,
+            "main": false,
+            "footer": false
+          },
+          "bodyOverflow": ""
+        },
+        "cliqueAtravessaFundo": {
+          "clicksCapturados": [],
+          "dialogCountDepois": 0,
+          "reabriu": false
+        }
+      }
+    },
+    {
+      "id": 2,
+      "nome": "Mobile: CTA do menu; fechamento por Escape, X e overlay",
+      "status": "pass",
+      "observado": {
+        "viewport": "360x800",
+        "abertura": {
+          "menuAbertoAntes": true,
+          "burgerExpandedAntes": "true",
+          "burgerLabelAntes": "Fechar menu",
+          "dialogCount": 1,
+          "activeNoDialogo": true,
+          "menuExistsDepois": false,
+          "burgerExpandedDepois": "false",
+          "burgerLabelDepois": "Abrir menu",
+          "inert": {
+            "header": true,
+            "main": true,
+            "footer": true
+          },
+          "bodyOverflow": "hidden",
+          "dialogRect": {
+            "x": 16,
+            "y": 188.56317138671875,
+            "width": 328,
+            "height": 427.203125,
+            "bottom": 615.7662963867188
+          }
+        },
+        "escape": {
+          "activeIsBurger": true,
+          "activeLabel": "Abrir menu",
+          "burgerExpanded": "false",
+          "menuExists": false,
+          "inert": {
+            "header": false,
+            "main": false,
+            "footer": false
+          },
+          "bodyOverflow": ""
+        },
+        "x": {
+          "activeIsBurger": true,
+          "activeLabel": "Abrir menu",
+          "burgerExpanded": "false",
+          "menuExists": false,
+          "inert": {
+            "header": false,
+            "main": false,
+            "footer": false
+          },
+          "bodyOverflow": ""
+        },
+        "overlay": {
+          "ponto": {
+            "x": 5,
+            "y": 450
+          },
+          "activeIsBurger": true,
+          "activeLabel": "Abrir menu",
+          "burgerExpanded": "false",
+          "menuExists": false,
+          "inert": {
+            "header": false,
+            "main": false,
+            "footer": false
+          },
+          "bodyOverflow": ""
+        },
+        "overlaySobreBurger": {
+          "clicksCapturados": [],
+          "menuReabriu": false,
+          "dialogCountDepois": 0,
+          "activeIsBurger": true
+        }
+      }
+    },
+    {
+      "id": 3,
+      "nome": "Outros acionadores: hero e CTA final",
+      "status": "pass",
+      "observado": {
+        "desktop": {
+          "hero": {
+            "activeIsTrigger": true,
+            "activeIsBurger": false,
+            "activeText": "Entrar na lista de espera"
+          },
+          "final": {
+            "activeIsTrigger": true,
+            "activeIsBurger": false,
+            "activeText": "Entrar na lista de espera"
+          }
+        },
+        "mobile360": {
+          "hero": {
+            "activeIsTrigger": true,
+            "activeIsBurger": false,
+            "activeText": "Entrar na lista de espera"
+          },
+          "final": {
+            "activeIsTrigger": true,
+            "activeIsBurger": false,
+            "activeText": "Entrar na lista de espera"
+          }
+        }
+      }
+    },
+    {
+      "id": 4,
+      "nome": "Teclado: Tab, Shift+Tab, Escape, Enter e Espaco",
+      "status": "pass",
+      "observado": {
+        "desktopFocusTrap": {
+          "todosDentroDoDialogo": true,
+          "sequencia": [
+            {
+              "passo": "inicial",
+              "tag": "DIV",
+              "isDialog": true,
+              "insideDialog": true
+            },
+            {
+              "passo": "Shift+Tab",
+              "tag": "BUTTON",
+              "text": "Entrar na lista de espera",
+              "insideDialog": true
+            },
+            {
+              "passo": "Tab",
+              "tag": "BUTTON",
+              "ariaLabel": "Fechar",
+              "insideDialog": true
+            },
+            {
+              "passo": "Shift+Tab",
+              "tag": "BUTTON",
+              "text": "Entrar na lista de espera",
+              "insideDialog": true
+            },
+            {
+              "passo": "Tab",
+              "tag": "BUTTON",
+              "ariaLabel": "Fechar",
+              "insideDialog": true
+            },
+            {
+              "passo": "Tab",
+              "tag": "INPUT",
+              "insideDialog": true
+            },
+            {
+              "passo": "Tab",
+              "tag": "INPUT",
+              "type": "email",
+              "insideDialog": true
+            },
+            {
+              "passo": "Tab",
+              "tag": "BUTTON",
+              "text": "Entrar na lista de espera",
+              "insideDialog": true
+            },
+            {
+              "passo": "Tab",
+              "tag": "BUTTON",
+              "ariaLabel": "Fechar",
+              "insideDialog": true
+            },
+            {
+              "passo": "Tab",
+              "tag": "INPUT",
+              "insideDialog": true
+            }
+          ]
+        },
+        "mobileFocusTrap": {
+          "todosDentroDoDialogo": true,
+          "sequencia": [
+            {
+              "passo": "inicial",
+              "tag": "DIV",
+              "isDialog": true,
+              "insideDialog": true
+            },
+            {
+              "passo": "Shift+Tab",
+              "tag": "BUTTON",
+              "text": "Entrar na lista de espera",
+              "insideDialog": true
+            },
+            {
+              "passo": "Tab",
+              "tag": "BUTTON",
+              "ariaLabel": "Fechar",
+              "insideDialog": true
+            },
+            {
+              "passo": "Tab",
+              "tag": "INPUT",
+              "insideDialog": true
+            },
+            {
+              "passo": "Tab",
+              "tag": "INPUT",
+              "type": "email",
+              "insideDialog": true
+            },
+            {
+              "passo": "Tab",
+              "tag": "BUTTON",
+              "text": "Entrar na lista de espera",
+              "insideDialog": true
+            },
+            {
+              "passo": "Tab",
+              "tag": "BUTTON",
+              "ariaLabel": "Fechar",
+              "insideDialog": true
+            }
+          ]
+        },
+        "enter": {
+          "abriu": true,
+          "escapeFechou": true,
+          "activeIsBurgerDepois": true
+        },
+        "space": {
+          "abriu": true,
+          "escapeFechou": true,
+          "activeIsBurgerDepois": true
+        }
+      }
+    },
+    {
+      "id": 5,
+      "nome": "Isolamento do fundo com arvore AX nativa",
+      "status": "pass",
+      "observado": {
+        "desktop": {
+          "aberto": {
+            "nonIgnoredNodes": 28,
+            "landmarks": {
+              "banner": 0,
+              "main": 0,
+              "contentinfo": 0
+            },
+            "nodes": [
+              {
+                "role": "dialog",
+                "name": "Lista de espera"
+              },
+              {
+                "role": "button",
+                "name": "Fechar"
+              },
+              {
+                "role": "heading",
+                "name": "Lista de espera"
+              },
+              {
+                "role": "textbox",
+                "name": "Nome"
+              },
+              {
+                "role": "textbox",
+                "name": "E-mail"
+              },
+              {
+                "role": "button",
+                "name": "Entrar na lista de espera"
+              }
+            ]
+          },
+          "fechado": {
+            "nonIgnoredNodes": 541,
+            "landmarks": {
+              "banner": 1,
+              "main": 1,
+              "contentinfo": 1
+            }
+          }
+        },
+        "mobile360": {
+          "aberto": {
+            "nonIgnoredNodes": 28,
+            "landmarks": {
+              "banner": 0,
+              "main": 0,
+              "contentinfo": 0
+            },
+            "nodes": [
+              {
+                "role": "dialog",
+                "name": "Lista de espera"
+              },
+              {
+                "role": "button",
+                "name": "Fechar"
+              },
+              {
+                "role": "heading",
+                "name": "Lista de espera"
+              },
+              {
+                "role": "textbox",
+                "name": "Nome"
+              },
+              {
+                "role": "textbox",
+                "name": "E-mail"
+              },
+              {
+                "role": "button",
+                "name": "Entrar na lista de espera"
+              }
+            ]
+          },
+          "fechado": {
+            "nonIgnoredNodes": 555,
+            "landmarks": {
+              "banner": 1,
+              "main": 1,
+              "contentinfo": 1
+            }
+          }
+        },
+        "sucesso": {
+          "nonIgnoredNodes": 28,
+          "landmarks": {
+            "banner": 0,
+            "main": 0,
+            "contentinfo": 0
+          },
+          "nodes": [
+            {
+              "role": "dialog",
+              "name": "Lista de espera"
+            },
+            {
+              "role": "button",
+              "name": "Fechar"
+            },
+            {
+              "role": "heading",
+              "name": "Lista de espera"
+            },
+            {
+              "role": "button",
+              "name": "Fechar"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": 6,
+      "nome": "Restauracao de valores anteriores de inert e overflow",
+      "status": "pass",
+      "observado": {
+        "antes": {
+          "footerInert": true,
+          "headerInert": false,
+          "mainInert": false,
+          "bodyOverflow": "auto"
+        },
+        "aberto": {
+          "footerInert": true,
+          "headerInert": true,
+          "mainInert": true,
+          "bodyOverflow": "hidden"
+        },
+        "depois": {
+          "footerInert": true,
+          "headerInert": false,
+          "mainInert": false,
+          "bodyOverflow": "auto",
+          "activeIsHeaderCta": true
+        }
+      }
+    },
+    {
+      "id": 7,
+      "nome": "Formulario, sucesso e fechamento",
+      "status": "pass_com_observacao",
+      "observado": {
+        "nome": "Marlon",
+        "email": "marlon@example.com",
+        "successText": "Pronto, Marlon! Você está na lista. Quando o Horus Guardian for lançado, o aviso chega em marlon@example.com.",
+        "success": {
+          "dialogCount": 1,
+          "inert": {
+            "header": true,
+            "main": true,
+            "footer": true
+          },
+          "bodyOverflow": "hidden",
+          "activeTag": "BODY",
+          "activeInsideDialog": false
+        },
+        "fechamento": {
+          "closeCount": 1,
+          "dialogCount": 0,
+          "activeIsHeaderCta": true,
+          "inert": {
+            "header": false,
+            "main": false,
+            "footer": false
+          },
+          "bodyOverflow": ""
+        },
+        "observacao": "No estado de sucesso o activeElement ficou em BODY; o foco retorna ao CTA do header ao fechar. O foco na tela de sucesso nao era criterio desta validacao."
+      }
+    },
+    {
+      "id": 8,
+      "nome": "Regressoes: ciclos, console, rede, scroll e toque",
+      "status": "pass",
+      "observado": {
+        "repeticoesDesktop": {
+          "ciclos": 2,
+          "passou": true
+        },
+        "repeticoesMobile": {
+          "ciclos": 2,
+          "passou": true
+        },
+        "consolePrincipal": {
+          "errors": 0,
+          "warnings": 0,
+          "info": 64,
+          "mensagem": "React DevTools; nao sao erros"
+        },
+        "redePrincipal": {
+          "falhas": 0,
+          "static": 584,
+          "status200": 515,
+          "status304": 69,
+          "nonStatic": 0
+        },
+        "toque": {
+          "overlayFechou": true,
+          "activeIsBurger": true,
+          "console": {
+            "total": 3,
+            "errors": 0,
+            "warnings": 0,
+            "pageErrors": 0
+          },
+          "rede": {
+            "responses": 73,
+            "failedRequests": 0,
+            "badResponses": 0,
+            "nonStatic": 27
+          }
+        },
+        "horizontalScroll": {
+          "1280x900": false,
+          "360x800": false
+        }
+      }
+    }
+  ],
+  "repeticoes": {
+    "desktop": {
+      "ciclos": 2,
+      "resultado": "pass",
+      "porCiclo": "aberto com inert true, dialog 1 e foco no dialogo; Escape fechou, inert false, dialog 0, body overflow restaurado e foco no CTA do header"
+    },
+    "mobile360": {
+      "ciclos": 2,
+      "resultado": "pass",
+      "porCiclo": "aberto pelo menu com inert true e dialog 1; Escape fechou, inert false, dialog 0, body overflow restaurado, menu fechado e foco no hamburguer"
+    }
+  },
+  "estadoSucesso": {
+    "successText": true,
+    "dialogVisible": true,
+    "inert": {
+      "header": true,
+      "main": true,
+      "footer": true
+    },
+    "bodyOverflow": "hidden",
+    "activeTag": "BODY",
+    "activeInsideDialog": false,
+    "cdpNodes": [
+      {
+        "role": "dialog",
+        "name": "Lista de espera",
+        "ignored": false
+      },
+      {
+        "role": "button",
+        "name": "Fechar",
+        "ignored": false
+      },
+      {
+        "role": "heading",
+        "name": "Lista de espera",
+        "ignored": false
+      },
+      {
+        "role": "button",
+        "name": "Fechar",
+        "ignored": false
+      }
+    ],
+    "fechamentoPeloBotaoFechar": {
+      "dialogCount": 0,
+      "inert": {
+        "header": false,
+        "main": false,
+        "footer": false
+      },
+      "bodyOverflow": "",
+      "focoVoltouAoAcionador": true,
+      "acionador": "header > button \"Entrar na lista\""
+    }
+  },
+  "mobile360": {
+    "abertoPeloMenu": {
+      "dialogCount": 1,
+      "menuExists": false,
+      "burgerExpanded": "false",
+      "activeNoDialogo": true,
+      "inert": {
+        "header": true,
+        "main": true,
+        "footer": true
+      },
+      "bodyOverflow": "hidden",
+      "horizontalScroll": false,
+      "cdpLandmarks": {
+        "banner": 0,
+        "main": 0,
+        "contentinfo": 0
+      }
+    },
+    "fechadoPorEscape": {
+      "dialogCount": 0,
+      "activeIsBurger": true,
+      "activeLabel": "Abrir menu",
+      "burgerExpanded": "false",
+      "inert": {
+        "header": false,
+        "main": false,
+        "footer": false
+      },
+      "bodyOverflow": "",
+      "cdpLandmarks": {
+        "banner": 1,
+        "main": 1,
+        "contentinfo": 1
+      }
+    },
+    "fechadoPorX": {
+      "dialogCount": 0,
+      "activeIsBurger": true,
+      "activeLabel": "Abrir menu",
+      "burgerExpanded": "false"
+    },
+    "fechadoPorOverlay": {
+      "dialogCount": 0,
+      "activeIsBurger": true,
+      "activeLabel": "Abrir menu",
+      "burgerExpanded": "false"
+    }
+  },
+  "toque": {
+    "viewport": "360x800",
+    "hasTouch": true,
+    "isMobile": true,
+    "resultado": "pass",
+    "aberto": {
+      "dialogCount": 1,
+      "activeNoDialogo": true,
+      "inert": {
+        "header": true,
+        "main": true,
+        "footer": true
+      },
+      "bodyOverflow": "hidden",
+      "menuExists": false,
+      "burgerExpanded": "false"
+    },
+    "fechadoNoOverlay": {
+      "dialogCount": 0,
+      "activeIsBurger": true,
+      "activeLabel": "Abrir menu",
+      "burgerExpanded": "false",
+      "inert": {
+        "header": false,
+        "main": false,
+        "footer": false
+      },
+      "bodyOverflow": ""
+    },
+    "console": {
+      "total": 3,
+      "errors": 0,
+      "warnings": 0,
+      "info": 1,
+      "pageErrors": 0
+    },
+    "rede": {
+      "responses": 73,
+      "failedRequests": 0,
+      "badResponses": 0,
+      "nonStatic": 27
+    },
+    "artefatos": [
+      "docs/evidencias/depois/B2-foco-mobile-toque-aberto.png",
+      "docs/evidencias/depois/B2-foco-mobile-toque-apos-overlay.png",
+      "docs/evidencias/depois/B2-foco-mobile-toque-resultado.json"
+    ]
+  },
+  "console": {
+    "errors": 0,
+    "warnings": 0,
+    "info": "React DevTools (64 mensagens no arquivo consolidado)",
+    "arquivos": [
+      "docs/evidencias/depois/B2-foco-console-all.txt",
+      "docs/evidencias/depois/B2-foco-console-warnings.txt"
+    ]
+  },
+  "rede": {
+    "falhas": 0,
+    "static": 584,
+    "status200": 515,
+    "status304": 69,
+    "nonStatic": 0,
+    "arquivos": [
+      "docs/evidencias/depois/B2-foco-network-static.txt",
+      "docs/evidencias/depois/B2-foco-network-nonstatic.txt"
+    ]
+  },
+  "observacoes": [
+    "No estado de sucesso o activeElement ficou em BODY; o foco retorna ao CTA do header ao fechar. O foco na tela de sucesso nao era criterio desta validacao e nao foi alterado.",
+    "Os inputs continuam sem name, required ou aria-required; isso pertence ao B4 e nao foi alterado nem avaliado como parte do B2.",
+    "Somente Chromium foi testado; nao houve teste em navegadores sem suporte a inert.",
+    "A arvore AX usada como prova e a nativa do Chromium via CDP; o ariaSnapshot do MCP inclui conteudo inerte e nao foi usado como prova.",
+    "Nenhum codigo foi alterado durante esta validacao; HEAD f021874; Modal.jsx e Header.jsx permanecem nao commitados."
+  ],
+  "limitacoes": [
+    "Foco em BODY durante a tela de sucesso; nao bloqueia o retorno ao acionador apos fechar, mas fica registrado para decisao separada.",
+    "Cobertura apenas em Chromium.",
+    "O contexto de toque foi separado e teve console/rede coletados no proprio contexto.",
+    "Nao houve commit."
+  ],
+  "validacaoAnterior": {
+    "escopo": "Isolamento do fundo antes do complemento de foco",
+    "statusGeral": "Isolamento do fundo aprovado; item 7 (retorno de foco) com falha observada no fechamento por clique no overlay. Validacao geral nao declarada como totalmente aprovada.",
+    "head": "f021874",
+    "arquivoCorrigido": "src/shared/ui/Modal/Modal.jsx",
+    "checks": [
+      {
+        "id": 1,
+        "nome": "Fechado: header, main e footer acessiveis",
+        "status": "pass",
+        "observado": {
+          "dialogCount": 0,
+          "inert": {
+            "header": false,
+            "main": false,
+            "footer": false
+          },
+          "bodyOverflow": "",
+          "cdpLandmarks": {
+            "banner": 1,
+            "main": 1,
+            "contentinfo": 1
+          },
+          "horizontalScroll": false
+        }
+      },
+      {
+        "id": 2,
+        "nome": "Aberto: dialogo presente e acessivel",
+        "status": "pass",
+        "observado": {
+          "dialogCount": 1,
+          "role": "dialog",
+          "nome": "Lista de espera",
+          "ariaModal": "true",
+          "ariaLabelledBy": ":r3:",
+          "cdpNodes": [
+            {
+              "role": "dialog",
+              "name": "Lista de espera",
+              "ignored": false
+            },
+            {
+              "role": "button",
+              "name": "Fechar",
+              "ignored": false
+            },
+            {
+              "role": "heading",
+              "name": "Lista de espera",
+              "ignored": false
+            },
+            {
+              "role": "textbox",
+              "name": "Nome",
+              "ignored": false
+            },
+            {
+              "role": "textbox",
+              "name": "E-mail",
+              "ignored": false
+            },
+            {
+              "role": "button",
+              "name": "Entrar na lista de espera",
+              "ignored": false
+            }
+          ]
+        }
+      },
+      {
+        "id": 3,
+        "nome": "Aberto: fundo isolado de tecnologias assistivas",
+        "status": "pass",
+        "observado": {
+          "inert": {
+            "header": true,
+            "main": true,
+            "footer": true
+          },
+          "inertAttributes": {
+            "header": true,
+            "main": true,
+            "footer": true
+          },
+          "overlayInert": false,
+          "dialogInert": false,
+          "cdpLandmarks": {
+            "banner": 0,
+            "main": 0,
+            "contentinfo": 0
+          },
+          "backgroundNodesInCdp": 0,
+          "programmaticBackgroundFocusBlocked": true,
+          "bodyOverflow": "hidden"
+        }
+      },
+      {
+        "id": 4,
+        "nome": "Tab e Shift+Tab permanecem no dialogo",
+        "status": "pass",
+        "observado": {
+          "sequencia": [
+            {
+              "passo": "inicial",
+              "tag": "DIV",
+              "isDialog": true,
+              "insideDialog": true
+            },
+            {
+              "passo": "Shift+Tab",
+              "tag": "BUTTON",
+              "text": "Entrar na lista de espera",
+              "insideDialog": true
+            },
+            {
+              "passo": "Tab",
+              "tag": "BUTTON",
+              "ariaLabel": "Fechar",
+              "insideDialog": true
+            },
+            {
+              "passo": "Shift+Tab",
+              "tag": "BUTTON",
+              "text": "Entrar na lista de espera",
+              "insideDialog": true
+            },
+            {
+              "passo": "Tab",
+              "tag": "BUTTON",
+              "ariaLabel": "Fechar",
+              "insideDialog": true
+            },
+            {
+              "passo": "Tab",
+              "tag": "INPUT",
+              "text": "",
+              "insideDialog": true
+            },
+            {
+              "passo": "Tab",
+              "tag": "INPUT",
+              "type": "email",
+              "insideDialog": true
+            },
+            {
+              "passo": "Tab",
+              "tag": "BUTTON",
+              "text": "Entrar na lista de espera",
+              "insideDialog": true
+            },
+            {
+              "passo": "Tab",
+              "tag": "BUTTON",
+              "ariaLabel": "Fechar",
+              "insideDialog": true
+            },
+            {
+              "passo": "Tab",
+              "tag": "INPUT",
+              "text": "",
+              "insideDialog": true
+            }
+          ],
+          "todosDentroDoDialogo": true
+        }
+      },
+      {
+        "id": 5,
+        "nome": "Escape fecha o modal",
+        "status": "pass",
+        "observado": {
+          "dialogCountDepois": 0,
+          "bodyOverflowDepois": "",
+          "inertDepois": {
+            "header": false,
+            "main": false,
+            "footer": false
+          },
+          "focoVoltouAoAcionador": true,
+          "acionador": "header > button \"Entrar na lista\""
+        }
+      },
+      {
+        "id": 6,
+        "nome": "Depois de fechar, o fundo volta a ficar acessivel",
+        "status": "pass",
+        "observado": {
+          "cdpLandmarks": {
+            "banner": 1,
+            "main": 1,
+            "contentinfo": 1
+          },
+          "dialogCount": 0,
+          "inert": {
+            "header": false,
+            "main": false,
+            "footer": false
+          },
+          "focoProgramaticoNoMainFuncionou": true,
+          "horizontalScroll": false
+        }
+      },
+      {
+        "id": 7,
+        "nome": "Retorno de foco ao acionador",
+        "status": "parcial",
+        "observado": {
+          "passou": [
+            "Escape abrindo pelo CTA do header: foco voltou ao CTA",
+            "Fechamento pelo botao \"Fechar\" do estado de sucesso: foco voltou ao CTA",
+            "Escape abrindo pelo CTA do hero (main): foco voltou ao CTA do hero",
+            "Fechamento pelo X do dialogo: foco voltou ao CTA do header"
+          ],
+          "falhou": [
+            "Clique no overlay para fechar: o cleanup focou o CTA, mas o default do mousedown real devolveu o foco para BODY (activeElement = BODY; isOpener = false).",
+            "No mobile 360, o CTA que abriu o modal e removido junto com o menu; depois do Escape o activeElement ficou em BODY. Nao ha acionador visivel equivalente para receber o foco."
+          ],
+          "diagnostico": "Um mousedown sintetico no overlay (sem o default do mouse real) manteve o foco no CTA do header; isso indica que o cleanup do Modal executa a restauracao, mas o default do clique real no overlay a sobrepoe. O comportamento nao foi alterado nesta etapa."
+        }
+      },
+      {
+        "id": 8,
+        "nome": "Console, rede e regressões evidentes",
+        "status": "pass_com_ressalvas_de_foco",
+        "observado": {
+          "consoleErrors": 0,
+          "consoleWarnings": 0,
+          "consoleInfo": "mensagens de React DevTools; nao sao erros",
+          "networkFailures": 0,
+          "nonStaticRequests": 0,
+          "staticRequests": 73,
+          "statusDosRequests": "todos 200 ou 304",
+          "cliqueDentroDoDialogoNaoFecha": true,
+          "cliqueNoOverlayFecha": true,
+          "scrollDoBodyBloqueadoNoAberto": true,
+          "scrollDoBodyRestauradoNoFechado": true,
+          "horizontalScroll1280": false,
+          "horizontalScroll360": false
+        }
+      }
+    ],
+    "repeticoes": {
+      "desktop": {
+        "ciclos": 3,
+        "resultado": "pass",
+        "porCiclo": "aberto com inert true, dialog 1 e foco no dialogo; Escape fechou, inert false, dialog 0, body overflow restaurado e foco no CTA do header"
+      },
+      "mobile360": {
+        "ciclos": 2,
+        "resultado": "pass_no_isolamento",
+        "porCiclo": "aberto com inert true, dialog 1 e foco no dialogo; Escape fechou, inert false, dialog 0 e body overflow restaurado; foco permaneceu em BODY porque o CTA do menu foi removido"
+      }
+    },
+    "estadoSucesso": {
+      "successText": true,
+      "dialogVisible": true,
+      "inert": {
+        "header": true,
+        "main": true,
+        "footer": true
+      },
+      "bodyOverflow": "hidden",
+      "cdpNodes": [
+        {
+          "role": "dialog",
+          "name": "Lista de espera",
+          "ignored": false
+        },
+        {
+          "role": "button",
+          "name": "Fechar",
+          "ignored": false
+        },
+        {
+          "role": "heading",
+          "name": "Lista de espera",
+          "ignored": false
+        },
+        {
+          "role": "button",
+          "name": "Fechar",
+          "ignored": false
+        }
+      ],
+      "fechamentoPeloBotaoFechar": {
+        "dialogCount": 0,
+        "inert": {
+          "header": false,
+          "main": false,
+          "footer": false
+        },
+        "bodyOverflow": "",
+        "focoVoltouAoAcionador": true
+      }
+    },
+    "mobile360": {
+      "fechadoInicial": {
+        "dialogCount": 0,
+        "inert": {
+          "header": false,
+          "main": false,
+          "footer": false
+        },
+        "bodyOverflow": "",
+        "horizontalScroll": false,
+        "active": "BODY"
+      },
+      "menuAberto": {
+        "menuVisible": true,
+        "burgerExpanded": "true"
+      },
+      "aberto": {
+        "dialogCount": 1,
+        "dialogRect": {
+          "x": 16,
+          "y": 186,
+          "width": 328,
+          "height": 427,
+          "bottom": 614
+        },
+        "inert": {
+          "header": true,
+          "main": true,
+          "footer": true
+        },
+        "bodyOverflow": "hidden",
+        "horizontalScroll": false,
+        "activeNoDialogo": true,
+        "focoNoFundoBloqueado": true,
+        "cdpLandmarks": {
+          "banner": 0,
+          "main": 0,
+          "contentinfo": 0
+        },
+        "cdpNodes": [
+          {
+            "role": "dialog",
+            "name": "Lista de espera",
+            "ignored": false
+          },
+          {
+            "role": "button",
+            "name": "Fechar",
+            "ignored": false
+          },
+          {
+            "role": "heading",
+            "name": "Lista de espera",
+            "ignored": false
+          },
+          {
+            "role": "textbox",
+            "name": "Nome",
+            "ignored": false
+          },
+          {
+            "role": "textbox",
+            "name": "E-mail",
+            "ignored": false
+          },
+          {
+            "role": "button",
+            "name": "Entrar na lista de espera",
+            "ignored": false
+          }
+        ]
+      },
+      "fechadoDepois": {
+        "dialogCount": 0,
+        "inert": {
+          "header": false,
+          "main": false,
+          "footer": false
+        },
+        "bodyOverflow": "",
+        "horizontalScroll": false,
+        "active": "BODY",
+        "acionadorAindaNoDom": false,
+        "cdpLandmarks": {
+          "banner": 1,
+          "main": 1,
+          "contentinfo": 1
+        }
+      }
+    },
+    "console": {
+      "errors": 0,
+      "warnings": 0,
+      "info": "React DevTools",
+      "arquivos": [
+        "docs/evidencias/depois/B2-console-desktop.txt",
+        "docs/evidencias/depois/B2-console-mobile.txt",
+        "docs/evidencias/depois/B2-console-all.txt"
+      ]
+    },
+    "rede": {
+      "falhas": 0,
+      "requestsNaoEstaticos": 0,
+      "requestsEstaticos": 73,
+      "status": "todos 200 ou 304",
+      "arquivos": [
+        "docs/evidencias/depois/B2-network-desktop.txt",
+        "docs/evidencias/depois/B2-network-desktop-static.txt",
+        "docs/evidencias/depois/B2-network-mobile.txt",
+        "docs/evidencias/depois/B2-network-mobile-static.txt"
+      ]
+    },
+    "limitacoes": [
+      "O browser_snapshot/ariaSnapshot do Playwright MCP e baseado no DOM e inclui o conteudo com inert. Por isso B2-mcp-ariaSnapshot-aberto.yml ainda lista banner/main/contentinfo; isso nao representa a arvore AX do Chromium. A prova usada foi o CDP Accessibility.getFullAXTree em B2-cdp-ax.json.",
+      "O fechamento por clique no overlay nao devolve o foco ao acionador; o cleanup chega a focar o CTA, mas o default do mousedown real leva o foco para BODY. Se isso for requisito, precisa de correcao separada (ex.: preventDefault no mousedown do overlay ou restauracao de foco depois do clique). Nao foi alterado nesta etapa.",
+      "No mobile, o CTA do menu e removido ao abrir o modal; o foco fica em BODY ao fechar. Se o comportamento esperado for voltar ao botao do menu, isso exige ajuste de foco separado. Nao foi alterado nesta etapa.",
+      "Somente Chromium foi testado; nao houve teste em navegadores sem suporte a inert.",
+      "Nao houve alteracao de codigo durante esta validacao e nenhum commit foi feito."
+    ],
+    "artefatos": {
+      "relatorio": "docs/evidencias/depois/B2-validacao.md",
+      "json": "docs/evidencias/depois/B2-validacao.json",
+      "arvoreAxCdp": "docs/evidencias/depois/B2-cdp-ax.json",
+      "capturas": [
+        "docs/evidencias/depois/B2-fechado-1280.png",
+        "docs/evidencias/depois/B2-aberto-1280.png",
+        "docs/evidencias/depois/B2-apos-fechar-1280.png",
+        "docs/evidencias/depois/B2-aberto-360.png",
+        "docs/evidencias/depois/B2-apos-fechar-360.png",
+        "docs/evidencias/depois/B2-sucesso-1280.png"
+      ],
+      "snapshotsMcpComLimitacao": [
+        "docs/evidencias/depois/B2-mcp-ariaSnapshot-aberto.yml",
+        "docs/evidencias/depois/B2-mcp-ariaSnapshot-fechado.yml",
+        "docs/evidencias/depois/B2-mcp-ariaSnapshot-apos-fechar.yml"
+      ]
+    }
+  },
+  "artefatos": {
+    "relatorio": "docs/evidencias/depois/B2-validacao.md",
+    "json": "docs/evidencias/depois/B2-validacao.json",
+    "arvoreAxCdp": [
+      "docs/evidencias/depois/B2-foco-cdp-ax-desktop-aberto.json",
+      "docs/evidencias/depois/B2-foco-cdp-ax-desktop-fechado.json",
+      "docs/evidencias/depois/B2-foco-cdp-ax-mobile-aberto.json",
+      "docs/evidencias/depois/B2-foco-cdp-ax-mobile-fechado.json",
+      "docs/evidencias/depois/B2-foco-cdp-ax-sucesso.json"
+    ],
+    "resultados": [
+      "docs/evidencias/depois/B2-foco-desktop-resultado.json",
+      "docs/evidencias/depois/B2-foco-mobile-resultado.json",
+      "docs/evidencias/depois/B2-foco-extras-resultado.json",
+      "docs/evidencias/depois/B2-foco-mobile-teclado-resultado.json",
+      "docs/evidencias/depois/B2-foco-mobile-toque-resultado.json"
+    ],
+    "capturas": [
+      "docs/evidencias/depois/B2-foco-desktop-aberto.png",
+      "docs/evidencias/depois/B2-foco-desktop-apos-overlay.png",
+      "docs/evidencias/depois/B2-foco-mobile-menu-aberto.png",
+      "docs/evidencias/depois/B2-foco-mobile-apos-escape.png",
+      "docs/evidencias/depois/B2-foco-mobile-apos-overlay.png",
+      "docs/evidencias/depois/B2-foco-mobile-toque-aberto.png",
+      "docs/evidencias/depois/B2-foco-mobile-toque-apos-overlay.png",
+      "docs/evidencias/depois/B2-foco-cta-final-apos-fechar.png",
+      "docs/evidencias/depois/B2-foco-sucesso-desktop.png"
+    ],
+    "consoleRede": [
+      "docs/evidencias/depois/B2-foco-console-all.txt",
+      "docs/evidencias/depois/B2-foco-console-warnings.txt",
+      "docs/evidencias/depois/B2-foco-network-static.txt",
+      "docs/evidencias/depois/B2-foco-network-nonstatic.txt"
+    ]
+  }
+}

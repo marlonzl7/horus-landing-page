@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { Button, Logo } from '@/shared/ui'
 import styles from './Header.module.css'
 
@@ -11,6 +11,7 @@ const NAV_ITEMS = [
 
 export function Header({ onJoinWaitlist }) {
   const [menuOpen, setMenuOpen] = useState(false)
+  const burgerRef = useRef(null)
 
   useEffect(() => {
     if (!menuOpen) return undefined
@@ -21,7 +22,12 @@ export function Header({ onJoinWaitlist }) {
     return () => document.removeEventListener('keydown', handleKeyDown)
   }, [menuOpen])
 
-  function handleJoin() {
+  function handleJoin(event) {
+    // No mobile, o CTA do menu sai do DOM ao abrir o modal. Foca o botão
+    // persistente do menu antes para que ele seja o alvo de retorno do modal.
+    if (event.currentTarget.closest('#menu-mobile')) {
+      burgerRef.current?.focus({ preventScroll: true })
+    }
     setMenuOpen(false)
     onJoinWaitlist()
   }
@@ -48,6 +54,7 @@ export function Header({ onJoinWaitlist }) {
         </Button>
 
         <button
+          ref={burgerRef}
           type="button"
           className={styles.burger}
           aria-label={menuOpen ? 'Fechar menu' : 'Abrir menu'}

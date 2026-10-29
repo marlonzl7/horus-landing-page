@@ -16,6 +16,18 @@ export function Modal({ isOpen, onClose, title, children }) {
     const previousOverflow = document.body.style.overflow
     document.body.style.overflow = 'hidden'
 
+    // Isola o conteúdo de fundo: aplica inert aos irmãos do overlay.
+    // O diálogo fica dentro do overlay, portanto não é afetado.
+    const overlay = dialogRef.current?.parentElement
+    const background = []
+    if (overlay?.parentElement) {
+      for (const element of overlay.parentElement.children) {
+        if (element === overlay) continue
+        background.push({ element, wasInert: element.inert })
+        element.inert = true
+      }
+    }
+
     // Move o foco para dentro do diálogo e prende o Tab nele
     dialogRef.current?.focus()
 
@@ -45,14 +57,23 @@ export function Modal({ isOpen, onClose, title, children }) {
     return () => {
       document.body.style.overflow = previousOverflow
       document.removeEventListener('keydown', handleKeyDown)
+      for (const { element, wasInert } of background) {
+        element.inert = wasInert
+      }
       previouslyFocused?.focus?.()
     }
   }, [isOpen])
 
   if (!isOpen) return null
 
+  function handleOverlayMouseDown(event) {
+    // Evita que o foco padrão do mousedown vá para o body depois do cleanup.
+    event.preventDefault()
+    onClose()
+  }
+
   return (
-    <div className={styles.overlay} onMouseDown={onClose}>
+    <div className={styles.overlay} onMouseDown={handleOverlayMouseDown}>
       <div
         ref={dialogRef}
         tabIndex={-1}
