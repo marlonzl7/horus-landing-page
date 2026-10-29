@@ -1,0 +1,17 @@
+{
+  "viewport": 320,
+  "clientWidth": 320,
+  "scrollWidth": 320,
+  "hasHorizontalScroll": false,
+  "scrollHeight": 10955,
+  "offenderCount": 6,
+  "offenders": [
+    { "tag": "rect", "cls": "SVGAnimatedString (interno do SVG do PhoneMockup)", "left": -34, "right": 354, "width": 387 },
+    { "tag": "rect", "cls": "SVGAnimatedString (interno do SVG do PhoneMockup)", "left": -1, "right": 112, "width": 113 },
+    { "tag": "rect", "cls": "SVGAnimatedString (interno do SVG do PhoneMockup)", "left": 208, "right": 321, "width": 113 },
+    { "tag": "g", "cls": "SVGAnimatedString (interno do SVG do PhoneMockup)", "left": -50, "right": 370, "width": 419 },
+    { "tag": "path", "cls": "SVGAnimatedString (interno do SVG do PhoneMockup)", "left": -50, "right": 370, "width": 419 },
+    { "tag": "path", "cls": "SVGAnimatedString (interno do SVG do PhoneMockup)", "left": -50, "right": 370, "width": 419 }
+  ],
+  "note": "Nenhum elemento de layout (fora do SVG decorativo) ultrapassa a viewport. scrollWidth == clientWidth, logo nao ha rolagem horizontal."
+}

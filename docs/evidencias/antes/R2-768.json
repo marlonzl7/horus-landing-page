@@ -1,0 +1,10 @@
+{
+  "viewport": 768,
+  "clientWidth": 768,
+  "scrollWidth": 768,
+  "hasHorizontalScroll": false,
+  "scrollHeight": 8126,
+  "offenderCount": 0,
+  "offenders": [],
+  "note": "Sem rolagem horizontal e sem elementos ultrapassando a viewport."
+}

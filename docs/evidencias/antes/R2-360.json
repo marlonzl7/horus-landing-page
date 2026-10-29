@@ -1,0 +1,15 @@
+{
+  "viewport": 360,
+  "clientWidth": 360,
+  "scrollWidth": 360,
+  "hasHorizontalScroll": false,
+  "scrollHeight": 10345,
+  "offenderCount": 4,
+  "offenders": [
+    { "tag": "rect", "cls": "SVGAnimatedString (interno do SVG do PhoneMockup)", "left": -14, "right": 374, "width": 387 },
+    { "tag": "g", "cls": "SVGAnimatedString (interno do SVG do PhoneMockup)", "left": -30, "right": 390, "width": 419 },
+    { "tag": "path", "cls": "SVGAnimatedString (interno do SVG do PhoneMockup)", "left": -30, "right": 390, "width": 419 },
+    { "tag": "path", "cls": "SVGAnimatedString (interno do SVG do PhoneMockup)", "left": -30, "right": 390, "width": 419 }
+  ],
+  "note": "Nenhum elemento de layout (fora do SVG decorativo) ultrapassa a viewport. scrollWidth == clientWidth, logo nao ha rolagem horizontal."
+}
