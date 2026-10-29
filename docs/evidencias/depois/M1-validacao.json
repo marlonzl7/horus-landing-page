@@ -1,0 +1,64 @@
+{
+  "problema": "M1",
+  "descricao": "Respostas fechadas do FAQ permaneciam na arvore de acessibilidade",
+  "correcao": "aria-hidden={!isOpen} no painel do FAQ",
+  "arquivo_alterado": "src/features/faq-accordion/FaqAccordion.jsx",
+  "data": "2026-10-28",
+  "validacao": {
+    "estado_inicial": {
+      "aberta": 1,
+      "fechadas": 5,
+      "paineis_fechados_com_aria_hidden_true": 5,
+      "paineis_fechados_expostos_na_arvore": 0,
+      "altura_painel_aberto_px": 89,
+      "altura_paineis_fechados_px": 0
+    },
+    "todas_fechadas": {
+      "aria_expanded": ["false", "false", "false", "false", "false", "false"],
+      "aria_hidden": ["true", "true", "true", "true", "true", "true"],
+      "regioes_na_arvore_de_acessibilidade": 0
+    },
+    "uma_aberta": {
+      "aria_hidden_da_aberta": "false",
+      "regioes_na_arvore_de_acessibilidade": 1,
+      "resposta_exposta": "O Horus usa o recurso nativo de localizacao em segundo plano do celular, com atualizacao a cada 30 segundos."
+    },
+    "f1_cliques": {
+      "perguntas": 6,
+      "maximo_de_paineis_abertos": 1,
+      "paineis_fechados_sem_aria_hidden": 0,
+      "resultado": "OK"
+    },
+    "f2_teclado": {
+      "tabs_ate_primeira_pergunta": 14,
+      "enter_fecha": true,
+      "espaco_abre": true,
+      "tab_para_proxima_e_enter_abre": true,
+      "outline": "3px solid",
+      "resultado": "OK"
+    },
+    "mobile_360": {
+      "abre": true,
+      "fecha": true,
+      "altura_aberta_px": 162,
+      "altura_fechada_px": 0,
+      "aria_hidden_alterna": true,
+      "resultado": "OK"
+    },
+    "regressao_titulos": {
+      "h1": 1,
+      "h2": 6,
+      "h3": 18,
+      "resultado": "OK"
+    },
+    "console": {
+      "erros": 0,
+      "avisos": 0,
+      "pageerrors": 0
+    },
+    "rede": {
+      "falhas": 0,
+      "respostas_4xx_5xx": 0
+    }
+  }
+}

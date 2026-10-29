@@ -27,7 +27,13 @@ export function FaqAccordion({ items }) {
                 <span className={styles.icon} aria-hidden="true">+</span>
               </button>
             </h3>
-            <div id={panelId} role="region" aria-labelledby={buttonId} className={styles.panel}>
+            <div
+              id={panelId}
+              role="region"
+              aria-labelledby={buttonId}
+              aria-hidden={!isOpen}
+              className={styles.panel}
+            >
               <p className={styles.answer}>{item.answer}</p>
             </div>
           </div>

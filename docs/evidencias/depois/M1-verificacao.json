@@ -1,0 +1,73 @@
+{
+  "verificacao": "M1 - FAQ na arvore de acessibilidade",
+  "data": "2026-10-28",
+  "correcao_implementada": true,
+  "onde_esta_a_correcao": "staged (indice); working tree igual ao indice; HEAD ainda sem a correcao",
+  "arquivo_de_codigo_alterado": "src/features/faq-accordion/FaqAccordion.jsx",
+  "alteracao": "aria-hidden={!isOpen} no painel do FAQ",
+  "outros_arquivos_de_codigo_alterados": 0,
+  "testes": {
+    "faq_todo_fechado": {
+      "perguntas": 6,
+      "aria_expanded_false": 6,
+      "aria_hidden_true": 6,
+      "regioes_no_dom": 6,
+      "regioes_expostas_na_arvore": 0,
+      "respostas_na_arvore": 0,
+      "altura_paineis_px": 0,
+      "resultado": "OK"
+    },
+    "uma_aberta": {
+      "aria_expanded_true": 1,
+      "aria_hidden_false": 1,
+      "regioes_expostas_na_arvore": 1,
+      "resposta_correta_exposta": true,
+      "altura_painel_px": 89,
+      "resultado": "OK"
+    },
+    "f1_clique": {
+      "perguntas_clicadas": 6,
+      "maximo_abertas": 1,
+      "fechadas_sem_aria_hidden": 0,
+      "abertas_sem_aria_hidden_false": 0,
+      "clicar_na_aberta_fecha_todas": true,
+      "resultado": "OK"
+    },
+    "f2_teclado": {
+      "tabs_ate_primeira_pergunta": 14,
+      "foco": "O app gasta muita bateria?",
+      "outline": "3px solid",
+      "aria_expanded_inicial": "true",
+      "enter_fecha": true,
+      "espaco_abre": true,
+      "tab_para_proxima": "Quem consegue ver a minha localização?",
+      "enter_na_segunda_abre_e_fecha_a_primeira": true,
+      "aria_expanded_apos_enter_na_segunda": "true",
+      "resultado": "OK"
+    },
+    "teclado_arvore_acessibilidade": {
+      "regioes_expostas": 1,
+      "regiao": "Quem consegue ver a minha localização?",
+      "resposta_exposta_correta": true,
+      "resultado": "OK"
+    },
+    "mobile_360": {
+      "abre": true,
+      "fecha": true,
+      "aria_hidden_alterna": true,
+      "resultado": "OK"
+    },
+    "console": {
+      "erros": 0,
+      "avisos": 0,
+      "pageerrors": 0,
+      "infos_react_devtools": 6,
+      "observacao": "mensagens info do React DevTools nao sao erros"
+    },
+    "rede": {
+      "falhas": 0,
+      "respostas_4xx_5xx": 0
+    }
+  },
+  "conclusao": "M1 corrigido e sem regressao nos comportamentos do FAQ"
+}
